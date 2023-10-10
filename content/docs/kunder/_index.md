@@ -1,0 +1,10 @@
++++
+title = "Kunder"
+description = "Oversikt over kunder og hva vi drifter for de"
+date = 2022-01-18T08:00:00+00:00
+updated = 2022-01-18T08:00:00+00:00
+template = "docs/section.html"
+sort_by = "weight"
+weight = 1
+draft = false
++++
