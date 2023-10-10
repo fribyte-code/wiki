@@ -18,6 +18,7 @@ A good video covering exactly our current setup can be found [here](https://www.
 ## Current configuration:
 
 The current servers used for HA are Bolivar, Skaftetryne and Pluto. 
+> Bolivar is kill, RIP in peace 2023-2023 ehhæujëææe update coming
 
 They are set up with a shared pool called `basseng`, this allows all vm drives to be stored with a copy on all the servers. This allows that once a Node goes down, the VMs will be spun up on other nodes  
 
