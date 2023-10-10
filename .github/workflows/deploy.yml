@@ -1,0 +1,35 @@
+name: Build and deploy to production
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Zola
+        run: |
+          wget -O zola.deb https://github.com/barnumbirr/zola-debian/releases/download/v0.16.1-1/zola_0.16.1-1_amd64_bullseye.deb
+          sudo dpkg -i zola.deb
+      - name: checkout all the submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Check Zola links
+        run: |
+          zola check
+      - name: Build Zola site
+        run: |
+          zola build
+      - name: rsync files
+        uses: burnett01/rsync-deployments@5.2
+        with:
+          switches: -avzr --delete
+          path: public/
+          remote_path: /home/fribyte/wiki/public
+          remote_host: ${{ secrets.HOST }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.KEY }}
+          remote_port: ${{ secrets.PORT }}
