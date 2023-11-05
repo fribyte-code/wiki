@@ -37,7 +37,7 @@ draft = false
 | 158.37.6.9  |                      | nat-public.kvarteret.no | carp1        | Felles addresse                        |
 | 158.37.6.10 |                      | dole.ss.uib.no          | carp1        | Felles addresse                        |
 | 158.37.6.11 |                      | klient.kvarteret.no     | carp1        | Felles addresse                        |
-| 158.37.6.12 |                      | Skaftetryne     | eth2         |                                        |
+| 158.37.6.12 |                      | Skaftetrynet            | eth2         |                                        |
 | 158.37.6.13 |                      | pompel.kvarteret.no     | eth0         |                                        |
 | 158.37.6.14 |                      | hermes.kvarteret.no     | eth0         |                                        |
 | 158.37.6.15 |                      |                         |              | (ledig)                                |
@@ -46,7 +46,7 @@ draft = false
 | 158.37.6.18 |                      | haproxy1.ss.uib.no      |              | (dunstus)                              |
 | 158.37.6.19 |                      | pengebingen             | eth0:0       | Docker-øko (intern) (konrad)           |
 | 158.37.6.20 |                      | pluto.ss.uib.no         | eth0:0       | samfunnet.uib.no (midlertidig)         |
-| 158.37.6.21 |                      |  Bolivar                       |              |                                |
+| 158.37.6.21 |                      | Bolivar                 |              |                                        |
 | 158.37.6.22 |                      |                         |              | (ledig)                                |
 | 158.37.6.23 |                      | srib-radio              | eth2:1       | Docker-øko (kunde) (konrad)            |
 | 158.37.6.24 |                      |                         |              | (ledig)                                |
@@ -55,7 +55,7 @@ draft = false
 | 158.37.6.27 |                      |                         |              | (ledig)                                |
 | 158.37.6.28 |                      | konrad                  | vmbr0        | proxmox                                |
 | 158.37.6.29 |                      | Mattermost              | eth0         | (intern) (konrad)                      |
-| 158.37.6.30 |                      | Pluto     | br0          |            |
+| 158.37.6.30 |                      | Pluto                   | br0          |                                        |
 | 158.37.6.31 | 2001:700:201:1::2000 | gjertrud                | vmbr0        | proxmox                                |
 | 158.37.6.32 | 2001:700:201:1::2    | dole.ss.uib.no          | em1          | Brannmur + DHCP                        |
 | 158.37.6.33 | 2001:700:201:1::0    | gw.ss.uib.no            | carp1        | Felles addresse                        |
