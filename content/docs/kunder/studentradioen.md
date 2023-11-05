@@ -25,9 +25,9 @@ leverer for dem for at de skal kunne være en radiostasjon. Per 06.03.2022 har d
 skrevet under på vårt kontraktforslag, samt betalt. Den må fornyes i januar
 neste år.
 
-### Relevante domener
+## Tjenester
 
-| Domenenavn                         | Kort Forklaring                                                                 |
+| Tjeneste og domenenavn             | Kort Forklaring                                                                 |
 | ---------------------------------- | ------------------------------------------------------------------------------- |
 | [srib.no](srib.no)                 | Wordpress-hovedside                                                             |
 | [booking.srib.no](booking.srib.no) | Meeting Room Booking System - for å reservere rom                               |
@@ -38,17 +38,46 @@ neste år.
 | [radio.srib.no](radio.srib.no)     | AzuraCast - Nettradiotjeneste bygget på IceCast og LiquidSoap                   |
 | [lytt.srib.no](lytt.srib.no)       | Statisk nettside som serverer en ferdiglaget iframe-tag fra AzuraCast           |
 | [Intern.srib.no](intern.srib.no)   | Gammelt lenketorg. Brukes fortsatt av produsentene deres                        |
+| Database for digas                 | Digas er radiospesifikk programvare. Vertet i VM med navn "Database"            |
+
+## Oppsett
+
+### Nettsider
+
+Alle tjenestene er vertet på "srib-radio" VMen som kjører på Proxmox clusteret.
+
+- Tjenestene kjører i Docker containere
+- Docker containerne er satt opp med docker-compose
+- En docker compose fil per tjeneste
+
+### Database for Digas
+
+Vertet i en egen VM med navn "Database". Satt opp med en MySQL database rett i
+Ubuntu.
+
+## Typisk problemet
+
+- "Srib.no virker ikke"
+  - Sjekk om https://srib.no/wp-admin.php virker
+  - "Database"-VM er full -> Øk diskplassen på VM-en
+  - "srib-radio"-VM har gått i lås -> Restart VM-en
+  - En av wordpress innleggene har en feil i seg -> Deaktiver nyeste innlegg og
+    sjekk om det virker
+- "Digas database er full"
+  - "Database" VM-en er full som fører til at Digas og srib.no wordpress siden
+    ikke virker. Øk disk størrelse
+    [/docs/instrukser/full-disk](/docs/instrukser/full-disk/)
 
 ## Kontaktinformasjon
 
 Sist oppdatert: 06.03.2022
 
-| Stilling           | Navn                     | Nummer     | E-adresse                  |
-| ------------------ | ------------------------ | ---------- | -------------------------- |
-| Styreleder         | Magnus Røtnes            | I/T        | styreleder@srib.no         |
-| Nestleder          | Erlend Haukeland Moe     | I/T        | nestleder@srib.no          |
-| Ansvarlig Redaktør | Michael Fabregas Breien  | 414 88 274 | ansvarlig.redaktor@srib.no |
-| Daglig Leder       | Gruo Wågan               | 415 14 076 | daglig.leder@srib.no       |
-| Teknisk Sjef       | Christian Kårbø Engelsen | 995 87 363 | teknisk.sjef@srib.no       |
-| IT-ansvarlig       | Ingen                    | I/T        | I/T                        |
-| PR-ansvarlig       | Bjørk Ellingsbø          | I/T        | pr@srib.no                 |
+| Stilling           | Navn                    | Nummer     | E-adresse                  |
+| ------------------ | ----------------------- | ---------- | -------------------------- |
+| Styreleder         | Magnus Røtnes           | I/T        | styreleder@srib.no         |
+| Nestleder          | Erlend Haukeland Moe    | I/T        | nestleder@srib.no          |
+| Ansvarlig Redaktør | Michael Fabregas Breien | 414 88 274 | ansvarlig.redaktor@srib.no |
+| Daglig Leder       | Gruo Wågan              | 415 14 076 | daglig.leder@srib.no       |
+| Teknisk Sjef       | Terje Peersen           | I/T        | terje.peersen@srib.no      |
+| IT-ansvarlig       | Ingen                   | I/T        | I/T                        |
+| PR-ansvarlig       | Bjørk Ellingsbø         | I/T        | pr@srib.no                 |
