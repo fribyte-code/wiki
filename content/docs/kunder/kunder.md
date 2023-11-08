@@ -60,3 +60,10 @@ Per 2023-03-25 drifter vi følgende:
 
 - Nettside drifting/verting (wip)
   - mso.uib.no
+
+## Mjøllnir.no
+
+Linjeforeningen for geologistudentene ved UiB
+
+- Nettside drifting/verting
+  - mjøllnir.no

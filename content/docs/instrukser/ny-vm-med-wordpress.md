@@ -85,8 +85,8 @@ services:
       - 80
     restart: always
     environment:
-      VIRTUAL_HOST: <DOMENE-NAVN>.no
-      LETSENCRYPT_HOST: <DOMENE-NAVN>.no
+      VIRTUAL_HOST: mjøllnir.fribyte.no, mjøllnir.no
+      LETSENCRYPT_HOST: mjøllnir.fribyte.no, mjøllnir.no
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
@@ -99,7 +99,8 @@ volumes:
   wp_content:
 ```
 
-4. Din nye wordpress side skal nå være tilgjengelig på https://DOMENE-NAVN.no/
+5. Kjør så `sudo docker compose up -d` for å starte opp docker-compose
+6. Din nye wordpress side skal nå være tilgjengelig på https://DOMENE-NAVN.no/
 
 ### Øke allowed upload file size:
 

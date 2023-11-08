@@ -11,22 +11,26 @@ draft = false
 
 ## Hvordan sette opp ny VM:
 
-If this VM is meant to have High availability, please read the setup for that before starting. The setup can be found [here](../ha-setup)
+If this VM is meant to have High availability, please read the setup for that
+before starting. The setup can be found [here](../ha-setup)
 
 1. Koble til wireguard
 1. Gå til proxmox [https://10.100.10.1:8006](https://10.100.10.1:8006)
-1. Clone templaten `8000 (Clone me ubuntu)` (høyreklikk -> clone)
-1. Definer navn
+   alternativt:
+   [https://proxmox.fribyte.no:8006](https://proxmox.fribyte.no:8006)
+1. Clone templaten `6000 (Clone me ubuntu)` (høyreklikk -> clone)
+1. Definer navn, gjerne navn på kunde
 1. Velg en ledig VM-ID
-1. Bytt "linked mode" til "full clone"
+1. Sett target storage til `basseng`
 1. Klikk "Clone"
 1. Definer ip under "cloud init"
-   - Finn ledig ip på [inventar.fribyte.uib.no](https://inventar.fribyte.uib.no)
+   - Finn ledig ip i [/docs/maskiner/oversikt](/docs/maskiner/oversikt)
    - Alternativt må du gjøre litt pinging rundt om kring på 158.37.6.xx for å
      finne en ledig ip
 1. Start vm og vent på at den er klar
 1. Oppdater `~/.ssh/config` på Konrad til å inkludere en peker til nye vm for
-   lettere ssh'ing
+   lettere ssh'ing. Alternativt kan man legge inn en DNS peker på kladden slik
+   at man kan bruke `ssh fribyte@maskinnavn.fribyte.no`.
 1. Du skal nå kunne `ssh` inn til den via konrad med `ssh {definert-navn}`
 
 ## Tildel mer lagringsplass

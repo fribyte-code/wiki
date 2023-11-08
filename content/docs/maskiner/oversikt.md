@@ -61,7 +61,7 @@ draft = false
 | 158.37.6.33 | 2001:700:201:1::0    | gw.ss.uib.no            | carp1        | Felles addresse                        |
 | 158.37.6.34 | 2001:700:201:1::1    | doffen.ss.uib.no        | em1          | Brannmur + DHCP                        |
 | 158.37.6.35 | 2001:700:201:1::3001 | bestemor.ss.uib.no      | br0 (eth0)   | Tidligere ganeti host + landingsserver |
-| 158.37.6.35 |                      | andeby.ss.uib.no        | br0:0 (eth0) | Ganeti master (peker mot bestemor      |
+| 158.37.6.35 |                      | andeby.ss.uib.no        | br0:0 (eth0) | Ganeti master peker mot bestemor       |
 | 158.37.6.36 | 2001:700:201:1::3002 | studvest                | eth0         | Docker-øko, (kunde) (konrad)           |
 | 158.37.6.37 | 2001:700:201:1::3000 | bestefar.ss.uib.no      | br0 (eth0)   |                                        |
 | 158.37.6.39 | 2001:700:201:1::7002 | dolly.ss.uib.no         | eth0         | (tilsynelatende ikke i bruk)           |
@@ -73,7 +73,7 @@ draft = false
 | 158.37.6.45 | 2001:700:201:1::3003 | dunstus                 | eth0         | ganeti host                            |
 | 158.37.6.46 | 2001:700:201:1::7016 | magica.ss.uib.no        | eth0         | gammel intern server                   |
 | 158.37.6.47 | 2001:700:201:1::7015 | lillehjelper.ss.uib.no  | eth0         | gammel IRC - Quassel                   |
-| 158.37.6.48 |                      | hetti                   |              | Ny fujitsu                             |
+| 158.37.6.48 |                      | mjøllnir.no             |              | Mjøllnir Wordpress                     |
 | 158.37.6.49 | 2001:700:201:1::7008 |                         |              | (ledig)                                |
 | 158.37.6.50 | 2001:700:201:1::7013 | kornelius.ss.uib.no     | eth0         | gammel overvåkning - Munin             |
 | 158.37.6.51 | 2001:700:201:1::7000 | anton.ss.uib.no         | eth0         | gammel LDAP                            |
