@@ -51,8 +51,8 @@ draft = false
 | 158.37.6.23 |                      | srib-radio              | eth2:1       | Docker-øko (kunde) (konrad)            |
 | 158.37.6.24 |                      |                         |              | (ledig)                                |
 | 158.37.6.25 |                      | btsi.no                 |              | (kunde)                                |
-| 158.37.6.26 |                      | Fergus                  |              | Ganeti host                            |
-| 158.37.6.27 |                      |                         |              | (ledig)                                |
+| 158.37.6.26 |                      | Ukjent                  |              | Ganeti host                            |
+| 158.37.6.27 |                      | Fergus                  | eno4         | Proxmox                                |
 | 158.37.6.28 |                      | konrad                  | vmbr0        | proxmox                                |
 | 158.37.6.29 |                      | Mattermost              | eth0         | (intern) (konrad)                      |
 | 158.37.6.30 |                      | Pluto                   | br0          |                                        |
