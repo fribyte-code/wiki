@@ -49,8 +49,9 @@ draft = false
 ## Skrue ZFS snapshots
 
 Skrue is configured to take snapshots regularly, this can lead to eating up disk
-space without us knowing where it went. To check how much space is used by
-snapshots, run the following command:
+space without us knowing where it went. A weakness of the snapshot is that they
+can eat up a lot of disk space. To check how much space is used by snapshots,
+run the following command:
 
 ```sh
 zfs list -t filesystem -o space
@@ -62,3 +63,8 @@ To delete snapshots, run the following command:
 ```sh
 zfs destroy dalar@202309040102_znap_monthly
 ```
+
+### Skrue ZFS snapshots schedule
+
+See `/etc/crontab` for cronjobs triggering snapshots And see
+`/usr/local/etc/znap.conf` for configuration of how many snapshots to keep
