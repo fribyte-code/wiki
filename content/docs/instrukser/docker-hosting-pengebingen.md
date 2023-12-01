@@ -74,14 +74,3 @@ sudo docker run --detach \
 - Husk at når når man kommuniserer mellom docker containere bruker man ikke
   `localhost`, men heller hostname til hver container. Slik at tilkobling til
   postgres blir `postgres:5432` istedenfor `localhost:5432`.
-
-## Forbedringsområder:
-
-- [ ] Lage systemd tjeneste som automatisk oppdaterer docker images når det
-      kommer ny versjon av det som skal hostes
-- [x] Landingsside for pengebingen som viser alle docker containere som er
-      hostet og deres status og versjoner
-  - [Portainer er innstallert hvor man kan se alle kjørende containere](https://pengebingen.fribyte.no/)
-- [x] Sette opp private docker container repository
-  - Vi har nå konteiner register innebygd i Gitlab her:
-    https://git.fribyte.no/groups/fribyte/-/container_registries
