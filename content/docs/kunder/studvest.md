@@ -52,6 +52,27 @@ Studvest kjører fortsatt filene sine på en samba filserver
   `/dalar/jails/filer.studvest.no`
 - Bruk `zpool list` og `zfs list` for å se hvor mye plass som er igjen.
 
+### Koble til samba filserver fra internet i UiB nettverk mellom studentsenteret og serverrommet
+
+1. Open File explorer on windows computer
+2. In the folder field, type `\\filer.studvest.no`
+3. There might be a popup asking for credentials
+4. Enter your username and password
+5. Click finish and the samba file server should be accessible
+6. Click pin to quick access in top left corner to make it easier to access
+   later
+
+### Enable samba file sharing support in Windows 10:
+
+You might need to enable file sharing support in Windows 10 to be able to
+connect:
+
+1. Open the control panel
+2. Press "Programs"
+3. Press "Turn windows features on or off"
+4. Enable "SMB 1.0/CIFS File Sharing Support"
+5. Press OK
+
 ### Tidligere problemer
 
 - Vi hadde en stund problemer med at Skrue frøs pga dårlige disker, da mistet
