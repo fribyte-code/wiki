@@ -52,7 +52,7 @@ Studvest kjører fortsatt filene sine på en samba filserver
   `/dalar/jails/filer.studvest.no`
 - Bruk `zpool list` og `zfs list` for å se hvor mye plass som er igjen.
 
-### Koble til samba filserver fra internet i UiB nettverk mellom studentsenteret og serverrommet
+### Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
 
 1. Open File explorer on windows computer
 2. In the folder field, type `\\filer.studvest.no`
