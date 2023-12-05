@@ -52,7 +52,7 @@ Studvest kjører fortsatt filene sine på en samba filserver
   `/dalar/jails/filer.studvest.no`
 - Bruk `zpool list` og `zfs list` for å se hvor mye plass som er igjen.
 
-### Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
+### Windows Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
 
 1. Open File explorer on windows computer
 2. In the folder field, type `\\filer.studvest.no`
@@ -61,6 +61,15 @@ Studvest kjører fortsatt filene sine på en samba filserver
 5. Click finish and the samba file server should be accessible
 6. Click pin to quick access in top left corner to make it easier to access
    later
+
+### Mac Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
+
+1. Open finder
+2. Open "Connect to server" window (Command + K)
+3. Type `smb://filer.studvest.no`
+4. Click connect
+5. If you get a popup asking for credentials, enter your username and password
+   and save to keychain
 
 ### Enable samba file sharing support in Windows 10:
 
