@@ -51,6 +51,9 @@ Studvest kjører fortsatt filene sine på en samba filserver
 - Filene er lagret på Skrue i en egen "zfs jail" under
   `/dalar/jails/filer.studvest.no`
 - Bruk `zpool list` og `zfs list` for å se hvor mye plass som er igjen.
+- Passord til samba server ligger i bitwarden
+- Mistenker at samba serveren er satt opp mot LDAP serveren på klodrik så vær
+  litt forsiktig med Klodrik.
 
 ### Windows Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
 
