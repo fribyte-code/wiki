@@ -63,7 +63,7 @@ lagring, med 2 cores og 2 sockets.
 
 [Anbefalte spesifikasjoner for Linux-maskiner kan du finne her](<https://minecraft.fandom.com/wiki/Server/Requirements/Dedicated#Unix_(Linux,_BSD,_macOS)>)
 
-[IP-adressen tildelt til serveren kan du finne her](@/docs/maskiner/nettverk-oversikt.md)
+[IP-adressen tildelt til serveren kan du finne her](@/docs/nettverk/nettverk-oversikt.md)
 
 ### Scripts
 

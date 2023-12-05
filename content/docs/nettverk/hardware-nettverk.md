@@ -409,7 +409,7 @@ er felles addressen brannmurene deler.
 - gateway: 2001:700:201:1::0
 - dns server 2001:700:201:1::53:2, 2001:700.201:1::53:1
 
-Se [Nettverksoversikt](@/docs/maskiner/nettverk-oversikt.md) for inventarliste
+Se [Nettverksoversikt](@/docs/nettverk/nettverk-oversikt.md) for inventarliste
 over interne ip-addresser.
 
 ### DRBD_sync_nett
