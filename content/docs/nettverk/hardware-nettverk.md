@@ -306,8 +306,8 @@ VLAN-nummer blir vanlgvis valgt etter følgende mønster:
 
 # Nettverksoversikt VLAN
 
-![Fribyte-network.png](/1500px-Fribyte-network.png) Stiplede linker er management
-oppkoblinger fra ipmi / bmc kort.
+![Fribyte-network.png](/1500px-Fribyte-network.png) Stiplede linker er
+management oppkoblinger fra ipmi / bmc kort.
 
 # Rutingoversikt
 
@@ -409,7 +409,8 @@ er felles addressen brannmurene deler.
 - gateway: 2001:700:201:1::0
 - dns server 2001:700:201:1::53:2, 2001:700.201:1::53:1
 
-Se [Nettverksoversikt](@/docs/maskiner/oversikt.md) for inventarliste over interne ip-addresser.
+Se [Nettverksoversikt](@/docs/maskiner/nettverk-oversikt.md) for inventarliste
+over interne ip-addresser.
 
 ### DRBD_sync_nett
 
@@ -1341,6 +1342,7 @@ Se [Nettverksoversikt](@/docs/maskiner/oversikt.md) for inventarliste over inter
 
 </div>
 
-Hentet fra «[https://wiki.uib.no/fribyte/index.php?title=Hardware:nettverk&oldid=1904](https://wiki.uib.no/fribyte/index.php?title=Hardware:nettverk&oldid=1904)»
+Hentet fra
+«[https://wiki.uib.no/fribyte/index.php?title=Hardware:nettverk&oldid=1904](https://wiki.uib.no/fribyte/index.php?title=Hardware:nettverk&oldid=1904)»
 
 </div>

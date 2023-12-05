@@ -11,14 +11,15 @@ draft = false
 
 # SRiB Minecraft Server
 
-Dette er et dokument som beskriver alt du trenger å vite om SRiB sin minecraft server
+Dette er et dokument som beskriver alt du trenger å vite om SRiB sin minecraft
+server
 
 ## Installasjon
 
 ### Miljø
 
-Operativsystemet er en fersk installasjon av Ubuntu 22.04.1 på en virtuell maskin i ProxMox 7.2. Utenom det er det 
-ingen spesielle miljø-konfigurasjoner.
+Operativsystemet er en fersk installasjon av Ubuntu 22.04.1 på en virtuell
+maskin i ProxMox 7.2. Utenom det er det ingen spesielle miljø-konfigurasjoner.
 
 ### Prosessen
 
@@ -34,32 +35,40 @@ ingen spesielle miljø-konfigurasjoner.
 10. `bash linuxgsm.sh mcserver`
 11. `~/mcserver install`
 12. `sudo nano serverfiles/server.properties`
-13. finn linjen: `server-ip:xxx.xxx.xxx.xxx` og skriv inn IP-adressen til serveren
+13. finn linjen: `server-ip:xxx.xxx.xxx.xxx` og skriv inn IP-adressen til
+    serveren
 14. lagre og lukk filen.
 15. `~/mcserver start`
-16. (ekstra) Du kan sjekke statusen til serveren ved å kjøre: `~/mcserver monitor`
+16. (ekstra) Du kan sjekke statusen til serveren ved å kjøre:
+    `~/mcserver monitor`
 
-Kilde: [https://www.techrepublic.com/article/install-minecraft-server-ubuntu/](https://www.techrepublic.com/article/install-minecraft-server-ubuntu/)
+Kilde:
+[https://www.techrepublic.com/article/install-minecraft-server-ubuntu/](https://www.techrepublic.com/article/install-minecraft-server-ubuntu/)
 
-Merk: spill-filene ligger, som følge av denne prosessen, under `/home/mcserver` i den aktuelle VM-en. mcserver-brukeren
-har heller ikke sudo-rettigheter.
+Merk: spill-filene ligger, som følge av denne prosessen, under `/home/mcserver`
+i den aktuelle VM-en. mcserver-brukeren har heller ikke sudo-rettigheter.
 
-pakken `libsdl2-2.0-0` står skrevet i kilden som `libsdl2-2.0-0:1386`, men denne pakken er spesifikt for Intel-maskiner.
+pakken `libsdl2-2.0-0` står skrevet i kilden som `libsdl2-2.0-0:1386`, men denne
+pakken er spesifikt for Intel-maskiner.
 
-Når du kjører `~/mcserver install`, blir avhengigheter sjekket. Siden mcserver-brukeren ikke har sudo-rettigheter, kan
-ikke detet scriptet intallere dem. Du må derfor installere dem manuelt. I så tifelle er det så enkelt som: `sudo apt-get install <navn på pakker>`.
+Når du kjører `~/mcserver install`, blir avhengigheter sjekket. Siden
+mcserver-brukeren ikke har sudo-rettigheter, kan ikke detet scriptet intallere
+dem. Du må derfor installere dem manuelt. I så tifelle er det så enkelt som:
+`sudo apt-get install <navn på pakker>`.
 
 ## Detaljer
 
-VM-en kjører på Konrad, ligger lagret på local og er tildelt 4GB RAM og 4GB lagring, med  2 cores og 2 sockets. 
+VM-en kjører på Konrad, ligger lagret på local og er tildelt 4GB RAM og 4GB
+lagring, med 2 cores og 2 sockets.
 
-[Anbefalte spesifikasjoner for Linux-maskiner kan du finne her](https://minecraft.fandom.com/wiki/Server/Requirements/Dedicated#Unix_(Linux,_BSD,_macOS))
+[Anbefalte spesifikasjoner for Linux-maskiner kan du finne her](<https://minecraft.fandom.com/wiki/Server/Requirements/Dedicated#Unix_(Linux,_BSD,_macOS)>)
 
-[IP-adressen tildelt til serveren kan du finne her](@/docs/maskiner/oversikt.md)
+[IP-adressen tildelt til serveren kan du finne her](@/docs/maskiner/nettverk-oversikt.md)
 
 ### Scripts
 
-Her er systemtjenesten som er opprettet for å starte minecraft-serveren automatisk etter en omstart.
+Her er systemtjenesten som er opprettet for å starte minecraft-serveren
+automatisk etter en omstart.
 
 ```sh
 [Unit]
@@ -76,7 +85,8 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-NB: husk å kjøre `sudo systemctl enable mcsrib` etterfulgt av `sudo systemctl daemon-reload`
+NB: husk å kjøre `sudo systemctl enable mcsrib` etterfulgt av
+`sudo systemctl daemon-reload`
 
 Her er startserver.sh som starter tjenester
 
