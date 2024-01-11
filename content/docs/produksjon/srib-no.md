@@ -2,7 +2,7 @@
 title = "srib.no"
 description = "Studentradioen sin Wordpress hjemmeside"
 date = 2024-01-11T14:00:00+00:00
-updated = 2022-01-11T14:00:00+00:00
+updated = 2024-01-11T14:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

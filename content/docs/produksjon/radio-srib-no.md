@@ -1,8 +1,8 @@
 +++
-title = "SRIB - AzuraCast & Icecast server"
-description = "Oversikt over AzuraCast og Icecast og deres funksjoner"
+title = "radio.srib.no"
+description = "Oversikt over AzuraCast og IceCast2 som tilrettelegger for srib sin nettradio."
 date = 2022-02-25T08:00:00+00:00
-updated = 2022-02-25T08:00:00+00:00
+updated = 2024-01-11T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
