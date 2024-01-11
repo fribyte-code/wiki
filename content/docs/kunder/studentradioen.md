@@ -30,14 +30,14 @@ neste år.
 | Tjeneste og domenenavn             | Kort Forklaring                                                                                                                                                                                               |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [srib.no](srib.no)                 | Wordpress-hovedside                                                                                                                                                                                           |
-| [booking.srib.no](booking.srib.no) | Meeting Room Booking System - for å reservere rom                                                                                                                                                             |
-| [skjema.srib.no](skjema.srib.no)   | LimeSurvey - for skreddersydde spørreundersøkelser                                                                                                                                                            |
-| [wiki.srib.no](wiki.srib.no)       | BookStack - for å skrive og eie sin egen wiki                                                                                                                                                                 |
-| [podcast.srib.no](podcast.srib.no) | RSS-generator skrevet i Django. Brukes for å lage RSS-strømmer til hver podcast. Kildekode: https://github.com/srib-dev/podkast.srib.no. Et docker image er bygget i srib-radio vm med secrets og kjører der. |
-| [galleri.srib.no](galleri.srib.no) | PhotoPrism - bildegalleri for alle bilder radioen vil ta vare på                                                                                                                                              |
-| [radio.srib.no](radio.srib.no)     | AzuraCast - Nettradiotjeneste bygget på IceCast og LiquidSoap                                                                                                                                                 |
-| [lytt.srib.no](lytt.srib.no)       | Statisk nettside som serverer en ferdiglaget iframe-tag fra AzuraCast                                                                                                                                         |
-| [Intern.srib.no](intern.srib.no)   | Gammelt lenketorg. Brukes fortsatt av produsentene deres                                                                                                                                                      |
+| [booking.srib.no](https://booking.srib.no) | Meeting Room Booking System - for å reservere rom                                                                                                                                                             |
+| [skjema.srib.no](https://skjema.srib.no)   | LimeSurvey - for skreddersydde spørreundersøkelser                                                                                                                                                            |
+| [wiki.srib.no](https://wiki.srib.no)       | BookStack - for å skrive og eie sin egen wiki                                                                                                                                                                 |
+| [podcast.srib.no](https://podcast.srib.no) | RSS-generator skrevet i Django. Brukes for å lage RSS-strømmer til hver podcast. Kildekode: https://github.com/srib-dev/podkast.srib.no. Et docker image er bygget i srib-radio vm med secrets og kjører der. |
+| [galleri.srib.no](https://galleri.srib.no) | PhotoPrism - bildegalleri for alle bilder radioen vil ta vare på                                                                                                                                              |
+| [radio.srib.no](https://radio.srib.no)     | AzuraCast - Nettradiotjeneste bygget på IceCast og LiquidSoap                                                                                                                                                 |
+| [lytt.srib.no](https://lytt.srib.no)       | Statisk nettside som serverer en ferdiglaget iframe-tag fra AzuraCast                                                                                                                                         |
+| [Intern.srib.no](https://intern.srib.no)   | Gammelt lenketorg. Brukes fortsatt av produsentene deres                                                                                                                                                      |
 | Database for digas                 | Digas er radiospesifikk programvare. Vertet i VM med navn "Database"                                                                                                                                          |
 
 ## Oppsett
@@ -67,17 +67,3 @@ Ubuntu.
   - "Database" VM-en er full som fører til at Digas og srib.no wordpress siden
     ikke virker. Øk disk størrelse
     [/docs/instrukser/full-disk](/docs/instrukser/full-disk/)
-
-## Kontaktinformasjon
-
-Sist oppdatert: 06.03.2022
-
-| Stilling           | Navn                    | Nummer     | E-adresse                  |
-| ------------------ | ----------------------- | ---------- | -------------------------- |
-| Styreleder         | Magnus Røtnes           | I/T        | styreleder@srib.no         |
-| Nestleder          | Erlend Haukeland Moe    | I/T        | nestleder@srib.no          |
-| Ansvarlig Redaktør | Michael Fabregas Breien | 414 88 274 | ansvarlig.redaktor@srib.no |
-| Daglig Leder       | Gruo Wågan              | 415 14 076 | daglig.leder@srib.no       |
-| Teknisk Sjef       | Terje Peersen           | I/T        | terje.peersen@srib.no      |
-| IT-ansvarlig       | Ingen                   | I/T        | I/T                        |
-| PR-ansvarlig       | Bjørk Ellingsbø         | I/T        | pr@srib.no                 |
