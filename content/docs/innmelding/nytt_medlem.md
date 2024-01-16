@@ -82,7 +82,7 @@ umask 077
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
 
-3. fra bestemor: `ssh gjertrud`
+3. fra bestemor: `ssh root@skaftetrynet.fribyte.no`
 4. `vim /etc/wireguard/wg0.conf`
 5. Lag en ny [Peer] i form av:
 
@@ -98,11 +98,25 @@ xx må byttes ut med et tall som ikke allerede er okkupert av en annen [Peer].
    finnes i `/etc/wireguard` i gjertrud. NB: Husk at public-keyen til
    maskintjeneren skal være i lokal konfig-fil, samt private-keyen som det nye
    medlemmet genererte.
+   - Eksempel på lokal wireguard fil:
+
+```toml
+[Interface]
+PrivateKey = xxxxx
+ListenPort = 51871
+Address = 10.100.10.xx/32
+
+[Peer]
+PublicKey = pEz/Wfumr/d9dEMjti3+Jf1KOtHVpd+zt8fW0pU1tmI=
+AllowedIPs = 10.100.10.0/24
+Endpoint = 158.37.6.12:51871
+```
 
 For at det nye medlemmet skal koble seg på Wireguard-maskintjeneren:
 
-7. På gjertrud: `wg-quick down wg0 && wg-quick up wg0`
+7. På skaftetrynet: `wg-quick down wg0 && wg-quick up wg0`
 8. lokalt: `wg-quick up *navn på konfig-fil*`
+9. For å se at wireguard virker, besøk https://proxmox.fribyte.no:8006
 
 ## ProxMox
 
