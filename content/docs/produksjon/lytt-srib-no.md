@@ -9,23 +9,7 @@ weight = 5
 draft = false
 +++
 
-## Iframe-HTML
-
-Azuracast genererer en `iframe`-tag for de offentlige "mountpoints"-ene til IceCast2-maskineriet. En "mountpoint" er på en måte en krok du kan henge lydstrømmer til. 
-
-For radioen sitt tilfelle, ser den slik ut:
-
-```html
-<iframe src="https://radio.srib.no/public/studentradioen_i_bergen/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
-```
-
-Denne er bare lagt rett inn i en html-fil som vi serverer ut på nettet. 
-
-### Hosting
-
-AzuraCast serveren hostes på VM-en `srib-radio`, som kjører i [Proxmox-clusteret](/docs/maskiner/bolivar-skaftetrynet-pluto-cluster), som en docker compose-instans. AzuraCast har en helt utrolig bra installer som er brukt til å sette opp systemet. [AzuraCast Docker installation guide](https://docs.azuracast.com/en/administration/docker/multi-site-installation). Filene ligger i mappen `/var/azuracast`. For å støtte å hoste flere docker containere på samme VM har vi brukt stegene under `AzuraCast Multi-Site Feature` som setter opp nginx-reverse-proxy og automatisk SSL sertifisering. Husk at andre docker containere må kobles til nettverket: `azuracast_frontend` for å at reverse proxy skal kunne se containerene.
-
-#### Hoste statisk side
+### Statisk side i Docker
 
 For å hoste en statisk side må du servere filene gjennom en http-server som nginx. For eksempel [lytt.srib.no](https://lytt.srib.no) blir hostet ved at en statisk `index.html` ligger i mappen `/var/www/html/srib.no/lytt`. Vi kjører en nginx container som kun serverer filer fra denne mappen ved å mounte mappen med følgende kommando:
 
@@ -39,13 +23,14 @@ sudo docker run -d --restart always \
 nginx:latest
 ```
 
-- `--name` -> Navn på docker container
-- `-v` -> Mount mappen med statisk filer til nginx sin default mappe
-- `--network` -> Koble til AzuraCast sitt docker nettverk, påkrevd for å komme
-  inn i reverse proxyen og for å få ssl sertifikater
+### HTML iframe-tag
 
-AzuraCast har mange fancy funksjoner, disse kan utforskes på domenet til VM-en `srib-radio`. Av ting vi kanskje kan se på er å mounte srib-nasen til AzuraCast og sette opp automatisk avspilling av mediafiler når man ikke får inn noe signal på icecast serveren. Dette kan potensielt fjerne behovet for den dedikerte maskinen i SRIB sitt server-rom.
+Azuracast genererer en `iframe`-tag for de offentlige "mountpoints"-ene til IceCast2-maskineriet. En "mountpoint" er på en måte en krok du kan henge lydstrømmer på; en mottaker for lydstrømmen din, som videresender den ut på nettet gjennom sitt eget domene. 
 
-AzuraCast har og en podcast funksjon som kan være verdt å se på.
+For radioen sitt tilfelle, ser den slik ut:
 
-Det er og en [streamers & DJs](https://docs.azuracast.com/en/user-guide/streamers-and-djs) funksjon som ikke virker akkurat nå pga noe port trøbbel. Men som åpner for at flere kilder kan strømme inn lyd og så kan make trikse og mikse mellom strømmerne. Potensielt noe som kan brukes på utesendinger.
+```html
+<iframe src="https://radio.srib.no/public/studentradioen_i_bergen/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+```
+
+Dette er limt rett inn i `index.html`, som nevnt tidligere.

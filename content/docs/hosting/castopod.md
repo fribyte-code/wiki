@@ -17,7 +17,7 @@ Jeg brukte en docker-compose fil, basert på [den som Castopod gir oss som stand
 
 Her er Docker Compose filen som fungerte til slutt:
 
-```Docker
+```yaml
 version: "3.7"
 
 services:
@@ -119,7 +119,7 @@ networks:
 
 En kan også benytte seg av ssh-nøkkel for verifisering. Det kan gjøres på denne måten:
 
-```Docker
+```yaml
 ttt_mount:
     driver: vieux/sshfs:latest
     driver_opts:

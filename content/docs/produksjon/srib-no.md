@@ -13,7 +13,7 @@ draft = false
 
 [Studentradioen i Bergen](/docs/kunder/studentradioen) sin hjemmeside er en Wordpress-installasjon som kjører i et Docker-miljø. Docker-miljøet kjører på en virtuell maskin, som heter "Pengebingen", i [Proxmox-miljøet](/docs/maskiner/bolivar-skaftetrynet-pluto-cluster) vårt. 
 
-## Docker compose file
+## Docker compose fil
 
 For å lansere nettsiden bruker vi docker compose. Det tillater oss å lagre konfigurasjonen mer sikkert over lengre tid, samt feilsøke og lansere mye enklere. 
 
@@ -79,7 +79,7 @@ networks:
     external: true
 ```
 
-NB: Det er viktig å bemerke seg `image: webdevops/php-apache:7.4-alpine`. Det er dette som bestemmer php-versjonen som wordpress-installasjonen skal bruke. Om denne versjonen, 7.4, blir for utdatert for Wordpress-utvidelsene, må versjonen oppdateres. 
+NB: Det er viktig å bemerke seg `image: webdevops/php-apache:7.4-alpine`. Det er dette som bestemmer php-versjonen som wordpress-installasjonen skal bruke. Temaet som nettsiden bruker, er ganske avhengig av at riktig php-versjon. Hvis ikke, kræsjer hele nettsiden. Om denne versjonen, 7.4, blir for utdatert for Wordpress-utvidelsene, må versjonen oppdateres. 
 
 ## Filopplasting og fillagring
 
