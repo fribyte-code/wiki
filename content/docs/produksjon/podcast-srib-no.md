@@ -52,9 +52,10 @@ Denne blokken binder en mappe på studentradioen sitt lokale NAS, `/home/fribyte
 
 ### Fildeling
 
-Om det ikke var åpenbart, så er 
-Denne blokken binder en mappe på studentradioen sitt lokale NAS, `/home/fribyte/srib-nas-mount/digasLydfiler/podcast` en lokal mappe på VM-en. Innholdet i den mappen kommer fra studentradioen sitt lokale NAS, som står i deres serverrom, men er på samme subnett. 
+Om det ikke var åpenbart, så er `/home/fribyte/srib-nas-mount/digasLydfiler/podcast` en lokal mappe på VM-en. Innholdet i den mappen kommer fra studentradioen sitt lokale NAS, som står i deres serverrom, men er på samme subnett. 
 
-Vi bruker CIFSv3 til å feste den relevante mappen fra NAS-et deres inn i VM-en vår, med denne linjen: `//158.37.6.118/NAS/     /home/fribyte/srib-nas-mount    cifs    vers=3.0,username=fribyte,password=kekekekek,noexec 0 0` i `fstab` 
+Vi bruker CIFSv3 til å feste den relevante mappen fra NAS-et deres inn i VM-en vår, med denne linjen: `//158.37.6.118/NAS/     /home/fribyte/srib-nas-mount    cifs    vers=3.0,username=fribyte,password=kekekekek,noexec 0 0` i `/etc/fstab`.
 
-Denne fildelingen krever at studentradioen godkjenner at vi kan koble oss til NAS-et deres. 
+Brukernavn og passord, er til brukeren i NAS-et til studentradioen. Fildelingen krever at studentradioen godkjenner at vi kan koble oss til NAS-et deres, gjennom programvaren til NAS-et deres.
+
+NAS-et deres er av typen QNAP TS-853BU, [og du kan lese mer om det her](https://wiki.srib.no/docs/machines/servers/mimir/).
