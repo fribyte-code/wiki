@@ -16,7 +16,7 @@ Diskbilder i Proxmox vises som litt spesielle filer, tilsynelatende symlinker. J
 Ofte vet Proxmox om de forskjellige partisjonene på disse diskbildene. Da kommer de opp på samme lokasjon returnert av kommandoen, som `disknavn-partX` der X er partisjonsnummeret. Erfaringsmessig er det partisjon nummer 1 som er root-partisjonen på VM-er klonet fra vår base.
 
 Gjennom kommandoen `losetup` kan så dette bildet mountes som en "loop device". Dette gjør at du kan bruke standardverktøy (feks. fdisk) for å jobbe med disken, som om det var en fysisk disk plassert i serveren:
-- For å gjøre et diskbilde til en loop device: `losetup`
+- For å gjøre et diskbilde til en loop device: `losetup -f -P [path returnert]` feks. `losetup -f -P /dev/zvol/basseng/vm-531-disk-0-part1`
 - For å liste loop devices aktive: `losetup -l`
 - For å deaktivere en loop device (påvirker ikke diskbildet): `losetup -d /dev/loopX`.
 
