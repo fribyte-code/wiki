@@ -92,9 +92,10 @@ PublicKey = *public-keyen til det nye medlemmet*
 AllowedIPs = 10.100.10.xx/32
 ```
 
+6. **NB** Husk å kjør migrerings-script som ligger i `/home/fribyte/migrate_haproxy_wg.sh` på load-balancer-1
 xx må byttes ut med et tall som ikke allerede er okkupert av en annen [Peer].
 
-6. Det nye medlemmet må lagre en lokal Wireguard-konfigureringsfil. Den kan
+7. Det nye medlemmet må lagre en lokal Wireguard-konfigureringsfil. Den kan
    finnes i `/etc/wireguard` i gjertrud. NB: Husk at public-keyen til
    maskintjeneren skal være i lokal konfig-fil, samt private-keyen som det nye
    medlemmet genererte.
