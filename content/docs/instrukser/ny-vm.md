@@ -23,11 +23,14 @@ before starting. The setup can be found [here](../ha-setup)
 1. Velg en ledig VM-ID
 1. Sett target storage til `basseng`
 1. Klikk "Clone"
+1. Brukernavn: fribyte
+1. Passord: det vanlige.
 1. Definer ip under "cloud init"
-   - Finn ledig ip i [/docs/maskiner/oversikt](/docs/maskiner/oversikt)
+   - Finn ledig ip i [/docs/nettverk/nettverk-oversikt.md](/docs/nettverk/nettverk-oversikt.md)
    - Alternativt må du gjøre litt pinging rundt om kring på 158.37.6.xx for å
      finne en ledig ip
-1. Start vm og vent på at den er klar
+1. Sjekk at SSH public key er definert, hvis dette ikke er tilfellet kan de kopieres fra en annen VM.
+1. Start vm og vent på at den er klar.
 1. Oppdater `~/.ssh/config` på Konrad til å inkludere en peker til nye vm for
    lettere ssh'ing. Alternativt kan man legge inn en DNS peker på kladden slik
    at man kan bruke `ssh fribyte@maskinnavn.fribyte.no`.
