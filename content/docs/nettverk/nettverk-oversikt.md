@@ -79,7 +79,7 @@ draft = false
 | 158.37.6.45 | 2001:700:201:1::3003     | dunstus                      | eth0         | ganeti host                            |
 | 158.37.6.46 | 2001:700:201:1::7016     | magica.ss.uib.no             | eth0         | gammel intern server                   |
 | 158.37.6.47 | 2001:700:201:1::7015     | lillehjelper.ss.uib.no       | eth0         | gammel IRC - Quassel                   |
-| 158.37.6.48 |                          | mjøllnir.no                  |              | Mjøllnir Wordpress                     |
+| 158.37.6.48 |                          |                              |              | (ledig)                                |
 | 158.37.6.49 |                          |                              |              | (ledig)                                |
 | 158.37.6.50 | 2001:700:201:1::7013     | kornelius.ss.uib.no          | eth0         | gammel overvåkning - Munin             |
 | 158.37.6.51 | 2001:700:201:1::7000     | anton.ss.uib.no              | eth0         | gammel LDAP                            |
