@@ -66,5 +66,10 @@ zfs destroy dalar@202309040102_znap_monthly
 
 ### Skrue ZFS snapshots schedule
 
-See `/etc/crontab` for cronjobs triggering snapshots And see
-`/usr/local/etc/znap.conf` for configuration of how many snapshots to keep
+See `/etc/crontab` for cronjobs triggering snapshots. -> Currently configured to
+only take snapshots of dalar/jails where studvest has files.
+
+- `vim /usr/local/sbin/znap.sh` for the script that takes the snapshots
+- And see `/usr/local/etc/znap.conf` for configuration of how many snapshots to
+  keep
+- See `/usr/local/etc/znap.d/dalar.conf` for configuration for the dalar pool
