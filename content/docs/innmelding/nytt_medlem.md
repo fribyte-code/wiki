@@ -71,7 +71,7 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 [Wireguard](https://www.wireguard.com/) er en VPN-tjeneste vi bruker for å koble
 oss opp mot enkelte drift-tjenester. Man må konfigurere tilkoblingen mellom
 maskintjeneren og det nye medlemmets enhet. Man kan finne en mal for klienten
-sin konfigureringsfil på både Konrad og Gjertrud, under `/etc/wireguard`.
+sin konfigureringsfil på load-balancer-1, under `/etc/wireguard`.
 
 1. Det nye medlemmet må laste ned Wireguard.
    [Metoden avhenger av systemet](https://www.wireguard.com/install/).
@@ -82,7 +82,7 @@ umask 077
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
 
-3. fra bestemor: `ssh root@skaftetrynet.fribyte.no`
+3. fra bestemor: `ssh root@158.37.6.49`
 4. `vim /etc/wireguard/wg0.conf`
 5. Lag en ny [Peer] i form av:
 
@@ -92,9 +92,10 @@ PublicKey = *public-keyen til det nye medlemmet*
 AllowedIPs = 10.100.10.xx/32
 ```
 
+6. **NB** Husk å kjør migrerings-script som ligger i `/home/fribyte/migrate_haproxy_wg.sh` på load-balancer-1
 xx må byttes ut med et tall som ikke allerede er okkupert av en annen [Peer].
 
-6. Det nye medlemmet må lagre en lokal Wireguard-konfigureringsfil. Den kan
+7. Det nye medlemmet må lagre en lokal Wireguard-konfigureringsfil. Den kan
    finnes i `/etc/wireguard` i gjertrud. NB: Husk at public-keyen til
    maskintjeneren skal være i lokal konfig-fil, samt private-keyen som det nye
    medlemmet genererte.
@@ -109,7 +110,7 @@ Address = 10.100.10.xx/32
 [Peer]
 PublicKey = pEz/Wfumr/d9dEMjti3+Jf1KOtHVpd+zt8fW0pU1tmI=
 AllowedIPs = 10.100.10.0/24
-Endpoint = 158.37.6.12:51871
+Endpoint = 158.37.6.28:51871
 ```
 
 For at det nye medlemmet skal koble seg på Wireguard-maskintjeneren:

@@ -59,7 +59,7 @@ draft = false
 | 158.37.6.25 |                          | btsi.no                      |              | (kunde)                                |
 | 158.37.6.26 |                          | Ukjent                       |              | Ukjent                                 |
 | 158.37.6.27 |                          | Fergus.fribyte.no            | eno4         | Proxmox node                           |
-| 158.37.6.28 |                          |                              |              | (ledig)                                |
+| 158.37.6.28 |                          | Flytende IP for lb-1 og lb-2 |              | delt mellom lb-1 og lb-2 VMer          |
 | 158.37.6.29 |                          | Mattermost                   |              | (intern) (konrad)                      |
 | 158.37.6.30 |                          | pluto.fribyte.no             |              | Proxmox node                           |
 | 158.37.6.31 | 2001:700:201:1::2000     | gjertrud.fribyte.no          | vmbr0        | Proxmox                                |
@@ -79,8 +79,8 @@ draft = false
 | 158.37.6.45 | 2001:700:201:1::3003     | dunstus                      | eth0         | ganeti host                            |
 | 158.37.6.46 | 2001:700:201:1::7016     | magica.ss.uib.no             | eth0         | gammel intern server                   |
 | 158.37.6.47 | 2001:700:201:1::7015     | lillehjelper.ss.uib.no       | eth0         | gammel IRC - Quassel                   |
-| 158.37.6.48 |                          |                              |              | (ledig)                                |
-| 158.37.6.49 |                          |                              |              | (ledig)                                |
+| 158.37.6.48 | 2001:700:201:1:5001::201 | load-balancer-1              | eth0         | Load balancer for kubernetes cluster   |
+| 158.37.6.49 | 2001:700:201:1:5001::202 | load-balancer-2              | eth0         | Load balancer for kubernetes cluster   |
 | 158.37.6.50 | 2001:700:201:1::7013     | kornelius.ss.uib.no          | eth0         | gammel overvåkning - Munin             |
 | 158.37.6.51 | 2001:700:201:1::7000     | anton.ss.uib.no              | eth0         | gammel LDAP                            |
 | 158.37.6.52 | 2001:700:201:1::7010     | kladden.ss.uib.no            | eth0         | DNS tjener (solveig) (master)          |
