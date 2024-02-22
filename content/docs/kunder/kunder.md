@@ -71,5 +71,5 @@ Linjeforeningen for geologistudentene ved UiB
 ## Root Linjeforening
 
 - Nettside verting
-  - root.linjeforening.no
-  - *.linjeforening.no
+  - www.rootlinjeforening.no
+  - *.rootlinjeforening.no

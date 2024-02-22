@@ -22,7 +22,7 @@ Sist Oppdatert: 21.02.2024
 | Domenenavn                       | Kort forklaring                |
 | -------------------------------- | ------------------------------ |
 | [www.rootlinjeforening.no](www.rootlinjeforening.no)               | NextJS-hovedside            |
-
+| [*.rootlinjeforening.no](#)               | Mulige nettsider            |
 
 ### Kontaktinformasjon
 
