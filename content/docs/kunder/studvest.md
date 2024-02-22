@@ -28,8 +28,8 @@ Sist Oppdatert: 12.01.2023
 
 | Domenenavn                                       | Kort forklaring                   |
 | ------------------------------------------------ | --------------------------------- |
-| [studvest.no](studvest.no)                       | Hovedside, ikke vertet av friByte |
-| [studvest-nc.fribyte.no](studvest-nc.fribyte.no) | Nextcloud server for Studvest     |
+| [studvest.no](https://studvest.no)                       | Hovedside, ikke vertet av friByte |
+| [studvest-nc.fribyte.no](https://studvest-nc.fribyte.no) | Nextcloud server for Studvest     |
 
 ## Kontaktinformasjon
 

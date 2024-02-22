@@ -28,7 +28,7 @@ Sist oppdatert: 06.03.2022
 
 | Domenenavn                               | Kort forklaring                                |
 | ---------------------------------------- | ---------------------------------------------- |
-| [Phonofestivalen.no](phonofestivalen.no) | Wordpress-hovedside; er for øyeblikket parkert |
+| [Phonofestivalen.no](https://phonofestivalen.no) | Wordpress-hovedside; er for øyeblikket parkert |
 
 ### Kontaktinformasjon
 
