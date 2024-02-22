@@ -27,4 +27,4 @@ Sist Oppdatert: 09.01.2024
 
 | Domenenavn               | Kort forklaring |
 | ------------------------ | --------------- |
-| [boskonf.no](boskonf.no) | Hovedside       |
+| [boskonf.no](https://boskonf.no) | Hovedside       |
