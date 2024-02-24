@@ -25,7 +25,7 @@ draft = false
   2606:4700:4700::1001
 
 | IPv4        | IPv6                     | Navn                         | Interface    | Kommentar                              |
-| ----------- | ------------------------ |------------------------------| ------------ |----------------------------------------|
+| ----------- | ------------------------ | ---------------------------- | ------------ | -------------------------------------- |
 |             | 2001:700:201:1:5001::2   | Petter.fribyte.no            |              | Kubernetes server node                 |
 |             | 2001:700:201:1:5001::1   | Raptus.fribyte.no            |              | Kubernetes server node                 |
 |             | 2001:700:201:1:5001::3   | Hutre.fribyte.no             |              | Kubernetes server node                 |
@@ -45,17 +45,17 @@ draft = false
 | 158.37.6.11 |                          | klient.kvarteret.no          | carp1        | Felles addresse                        |
 | 158.37.6.12 |                          | Skaftetrynet.fribyte.no      |              | Proxmox node                           |
 | 158.37.6.13 |                          |                              |              | (ledig)                                |
-| 158.37.6.14 |                          | SUB-BSI.fribyte.no           |              | (kunde)                        |
+| 158.37.6.14 |                          | SUB-BSI.fribyte.no           |              | (kunde)                                |
 | 158.37.6.15 |                          |                              |              | (ledig)                                |
 | 158.37.6.16 |                          | srib-minecraft               |              | (kunde) (konrad)                       |
 | 158.37.6.17 |                          |                              |              | (ledig)                                |
 | 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus)                              |
 | 158.37.6.19 |                          | pengebingen                  |              | Docker-øko (intern) (konrad)           |
 | 158.37.6.20 |                          | pluto.ss.uib.no              |              | Gammel webside server                  |
-| 158.37.6.21 |                          |                              |              | (ledig)                                |
-| 158.37.6.22 |                          |                              |              | (ledig)                                |
+| 158.37.6.21 | 2001:700:201:1::d1       | ns1.fribyte.no               |              | Navnetjener                            |
+| 158.37.6.22 | 2001:700:201:1::d2       | ns2.fribyte.no               |              | Navnetjener                            |
 | 158.37.6.23 |                          | srib-radio                   |              | Docker-øko (kunde) (konrad)            |
-| 158.37.6.24 |                          |                              |              | (ledig)                                |
+| 158.37.6.24 | 2001:700:201:1::fd       |                              |              | Rekursiv navnetjener                   |
 | 158.37.6.25 |                          | btsi.no                      |              | (kunde)                                |
 | 158.37.6.26 |                          | Ukjent                       |              | Ukjent                                 |
 | 158.37.6.27 |                          | Fergus.fribyte.no            | eno4         | Proxmox node                           |
