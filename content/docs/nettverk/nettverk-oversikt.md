@@ -52,8 +52,8 @@ draft = false
 | 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus)                              |
 | 158.37.6.19 |                          | pengebingen                  |              | Docker-øko (intern) (konrad)           |
 | 158.37.6.20 |                          | pluto.ss.uib.no              |              | Gammel webside server                  |
-| 158.37.6.21 | 2001:700:201:1:5001::d1  | ns1.fribyte.no               |              | Navnetjener                            |
-| 158.37.6.22 | 2001:700:201:1:5001::d2  | ns2.fribyte.no               |              | Navnetjener                            |
+| 158.37.6.21 | 2001:700:201:1::d1       | ns1.fribyte.no               |              | Navnetjener                            |
+| 158.37.6.22 | 2001:700:201:1::d2       | ns2.fribyte.no               |              | Navnetjener                            |
 | 158.37.6.23 |                          | srib-radio                   |              | Docker-øko (kunde) (konrad)            |
 | 158.37.6.24 | 2001:700:201:1:5001::fd  |                              |              | Rekursiv navnetjener                   |
 | 158.37.6.25 |                          | btsi.no                      |              | (kunde)                                |
