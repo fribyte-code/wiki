@@ -55,7 +55,7 @@ draft = false
 | 158.37.6.21 | 2001:700:201:1::d1       | ns1.fribyte.no               |              | Navnetjener                            |
 | 158.37.6.22 | 2001:700:201:1::d2       | ns2.fribyte.no               |              | Navnetjener                            |
 | 158.37.6.23 |                          | srib-radio                   |              | Docker-øko (kunde) (konrad)            |
-| 158.37.6.24 | 2001:700:201:1:5001::fd  |                              |              | Rekursiv navnetjener                   |
+| 158.37.6.24 | 2001:700:201:1::fd       |                              |              | Rekursiv navnetjener                   |
 | 158.37.6.25 |                          | btsi.no                      |              | (kunde)                                |
 | 158.37.6.26 |                          | Ukjent                       |              | Ukjent                                 |
 | 158.37.6.27 |                          | Fergus.fribyte.no            | eno4         | Proxmox node                           |
