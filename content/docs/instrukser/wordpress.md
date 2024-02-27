@@ -9,16 +9,13 @@ weight = 5
 draft = false
 +++
 
-## Kom i gang med Wordpress!
-
-
 #### Innlogging.
 
 1. Gå til https://DOMENE_NAVN/wp-admin.
 2. Bruk brukernavn og passord for å få tilgang til Wordpress Dashboard.
 
 #### Installere og endre tema.
-1. Trykk på "Appearance", detter velg submeny "Themes".
+1. Trykk på "Appearance", deretter velg submeny "Themes".
 2. Trykk på "Add new theme" for å legge til et nytt tema.
     - Her ligger det flere tusen ferdiglagde temaer.
 3. Hold over valgt tema og velg "Install".
