@@ -2,14 +2,14 @@
 title = "Kunder - Sammendrag"
 description = "Oversikt over kunder og hva vi drifter for de"
 date = 2022-01-18T08:00:00+00:00
-updated = 2022-01-18T08:00:00+00:00
+updated = 2024-02-22T00:13:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 2
 draft = false
 +++
 
-Per 2023-03-25 drifter vi følgende:
+Per 2024-02-22 drifter vi følgende:
 
 ## SRIB - Studentradioen i Bergen:
 
@@ -67,3 +67,9 @@ Linjeforeningen for geologistudentene ved UiB
 
 - Nettside drifting/verting
   - mjøllnir.no
+
+## Root Linjeforening
+
+- Nettside verting
+  - www.rootlinjeforening.no
+  - *.rootlinjeforening.no

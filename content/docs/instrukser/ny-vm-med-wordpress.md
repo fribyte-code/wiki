@@ -85,8 +85,8 @@ services:
       - 80
     restart: always
     environment:
-      VIRTUAL_HOST: mjøllnir.fribyte.no, mjøllnir.no
-      LETSENCRYPT_HOST: mjøllnir.fribyte.no, mjøllnir.no
+      VIRTUAL_HOST: <DOMENE-NAVN>
+      LETSENCRYPT_HOST: <DOMENE-NAVN>
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress

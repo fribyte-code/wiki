@@ -26,9 +26,9 @@ Sist Oppdatert: 06.03.2022
 
 | Domenenavn                       | Kort forklaring                |
 | -------------------------------- | ------------------------------ |
-| [bstv.no](bstv.no)               | Wordpress-hovedside            |
-| [intern.bstv.no](intern.bstv.no) | Fungerer ikke, 503-feilmelding |
-| [utstyr.bstv.no](utstyr.bstv.no) | Meeting Room Booking System    |
+| [bstv.no](https://bstv.no)               | Wordpress-hovedside            |
+| [intern.bstv.no](https://intern.bstv.no) | Fungerer ikke, 503-feilmelding |
+| [utstyr.bstv.no](https://utstyr.bstv.no) | Meeting Room Booking System    |
 
 ### Kontaktinformasjon
 

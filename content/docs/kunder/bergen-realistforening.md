@@ -34,7 +34,7 @@ Sist Oppdatert: 21.03.2023
 
 | Domenenavn             | Kort forklaring            |
 | ---------------------- | -------------------------- |
-| [rf.uib.no](rf.uib.no) | Hovedside, vertet på Pluto |
+| [rf.uib.no](https://rf.uib.no) | Hovedside, vertet på Pluto |
 
 ## Kontaktinformasjon
 
