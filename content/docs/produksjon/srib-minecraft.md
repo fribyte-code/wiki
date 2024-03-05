@@ -2,7 +2,7 @@
 title = "SRiB Minecraft server"
 description = "Alt du trenger å vite om minecraft-serveren til SRiB"
 date = 2022-12-30T04:00:00+00:00
-updated = 2022-12-30
+updated = 2024-02-10
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1
@@ -11,15 +11,14 @@ draft = false
 
 # SRiB Minecraft Server
 
-Dette er et dokument som beskriver alt du trenger å vite om SRiB sin minecraft
-server
+Dette er et dokument som beskriver alt du trenger å vite om SRiB sin ;MineCraft server
 
 ## Installasjon
 
 ### Miljø
 
-Operativsystemet er en fersk installasjon av Ubuntu 22.04.1 på en virtuell
-maskin i ProxMox 7.2. Utenom det er det ingen spesielle miljø-konfigurasjoner.
+Operativsystemet er en fersk installasjon av Ubuntu 22.04 på en virtuell
+maskin i ProxMox 8 Utenom det er det ingen spesielle miljø-konfigurasjoner.
 
 ### Prosessen
 
