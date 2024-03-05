@@ -204,3 +204,8 @@ Brukernavn og passord, er til brukeren i NAS-et til studentradioen. Fildelingen 
 Dette er for både lesing og skriving, selvfølgelig. Filer som ligger i den mappen på NAS-et blir vist i `bilder.srib.no`, og alle bilder som blir lastet opp til `bilder.srib.no`, ender opp på NAS-et deres.
 
 NAS-et deres er av typen QNAP TS-853BU, [og du kan lese mer om det her](https://wiki.srib.no/docs/machines/servers/mimir/).
+
+
+### client_max_body_size problemer
+
+I utgangspunktet var det et problem med at størrelsen på bildet som ble forsøkt lastet opp var for stort. Dette var fordi `client_max_body_size` i nginx-proxy sin nginx.conf var satt 1MB, mens Azuracast sin `client_max_body_size` var satt til 50MB. Så da satte vi nginx-proxy sin `client_max_body_size` til 50MB også. 
