@@ -2,7 +2,7 @@
 title = "Nytt medlem"
 description = "Hvordan innføre nytt medlem"
 date = 2022-02-23T08:00:00+00:00
-updated = 2022-08-31
+updated = 2024-04-16
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -82,9 +82,10 @@ umask 077
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
 
-3. fra bestemor: `ssh root@158.37.6.49`
-4. `vim /etc/wireguard/wg0.conf`
-5. Lag en ny [Peer] i form av:
+3. fra bestemor: `ssh root@158.37.6.48` (altså gå til load-balancer-1)
+4. `sudo vim /etc/wireguard/wg0.conf`
+5. Kjør scriptet i hjemmemappen på load-balancer-1: `./propagate_haproxy_wg.sh`
+6. Lag en ny [Peer] i form av:
 
 ```
 [Peer] # *navn på medlem*, *enhetstype*
@@ -92,7 +93,6 @@ PublicKey = *public-keyen til det nye medlemmet*
 AllowedIPs = 10.100.10.xx/32
 ```
 
-6. **NB** Husk å kjør migrerings-script som ligger i `/home/fribyte/migrate_haproxy_wg.sh` på load-balancer-1
 xx må byttes ut med et tall som ikke allerede er okkupert av en annen [Peer].
 
 7. Det nye medlemmet må lagre en lokal Wireguard-konfigureringsfil. Den kan
@@ -115,9 +115,9 @@ Endpoint = 158.37.6.28:51871
 
 For at det nye medlemmet skal koble seg på Wireguard-maskintjeneren:
 
-7. På skaftetrynet: `wg-quick down wg0 && wg-quick up wg0`
-8. lokalt: `wg-quick up *navn på konfig-fil*`
-9. For å se at wireguard virker, besøk https://proxmox.fribyte.no:8006
+8. På load-balancer-1: `wg-quick down wg0 && wg-quick up wg0`
+9. lokalt: `wg-quick up *navn på konfig-fil*`
+10. For å se at wireguard virker, besøk https://proxmox.fribyte.no:8006
 
 ## ProxMox
 
@@ -154,12 +154,11 @@ Som en god øvelse i git, kan det nye medlemmet gjøre det selv. Dette er hva en
 gjør:
 
 1. Klon, eller dra ned, siste versjon av github-repoet vårt som heter `admin`.
-2. Åpne filen, `../legitimasjon/kortnummer` med ditt foretrukne
-   tekstredigeringsprogram.
+2. Åpne filen `medlemmer/legitimasjon/kortnummer` med ditt foretrukne tekstredigeringsprogram.
 3. Skriv inn kortnummeret ditt, lagre og lukk filen.
 4. Etabler forandringene og dytt dem til master.
 5. Leder må dermed sende mail til kortsenteret med en liste av kortnummerene, se
-   vitebok for leder i admin repoet.
+   vitebok for leder i admin repoet. Fint om du varsler leder om dette.
 
 ## Signal
 

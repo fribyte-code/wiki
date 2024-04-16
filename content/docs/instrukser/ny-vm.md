@@ -26,7 +26,7 @@ before starting. The setup can be found [here](../ha-setup)
 1. Brukernavn: fribyte
 1. Passord: det vanlige.
 1. Definer ip under "cloud init"
-   - Finn ledig ip i [/docs/nettverk/nettverk-oversikt.md](/docs/nettverk/nettverk-oversikt.md)
+   - Finn ledig ip i [/docs/nettverk/nettverk-oversikt](/docs/nettverk/nettverk-oversikt)
    - Alternativt må du gjøre litt pinging rundt om kring på 158.37.6.xx for å
      finne en ledig ip
 1. Sjekk at SSH public key er definert, hvis dette ikke er tilfellet kan de kopieres fra en annen VM.

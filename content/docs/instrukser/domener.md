@@ -11,9 +11,9 @@ draft = false
 
 ## Hvordan sette opp nytt domene:
 
-1. Ta turen til andeby `ssh root@andeby.fribyte.no`
-2. `ssh kladden`
-3. Oppdater passende domene ved å kjøre scriptet `./update_zone.sh fribyte.no`
+1. Ta turen til bestemor `ssh root@bestemor.s.fribyte.no`
+2. `ssh fribyte@ns1.fribyte.no`
+3. Oppdater passende domene ved å kjøre scriptet `./update_zone.sh fribyte.no` (bruk noe annet enn fribyte.no for å redigere domener som ikke er .fribyte.no)
 4. Legg til passende entry
 5. Oppdater serial `{år}{måned}{dato}{hh}` -> `2022020618`
 
@@ -28,3 +28,5 @@ draft = false
    https://1.1.1.1/purge-cache/ og så skrive inn ditt nye domenenavn og trykk
    "Purge Cache". Da vil Cloudflare oppdatere det domenet for alle i hele verden
    som bruker Cloudflare.
+
+For mer detaljert informasjon, se [/docs/nettverk/dns](/docs/nettverk/dns)
