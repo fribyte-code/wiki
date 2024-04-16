@@ -25,7 +25,7 @@ draft = false
   2606:4700:4700::1001
 
 | IPv4        | IPv6                     | Navn                         | Interface    | Kommentar                               |
-| ----------- | ------------------------ | ---------------------------- | ------------ | --------------------------------------- |
+| ----------- | ------------------------ |------------------------------| ------------ | --------------------------------------- |
 |             | 2001:700:201:1:5001::2   | Petter.fribyte.no            |              | Kubernetes server node                  |
 |             | 2001:700:201:1:5001::1   | Raptus.fribyte.no            |              | Kubernetes server node                  |
 |             | 2001:700:201:1:5001::3   | Hutre.fribyte.no             |              | Kubernetes server node                  |
@@ -46,7 +46,7 @@ draft = false
 | 158.37.6.12 |                          | Skaftetrynet.fribyte.no      |              | Proxmox node                            |
 | 158.37.6.13 |                          |                              |              | (ledig)                                 |
 | 158.37.6.14 |                          | SUB-BSI.fribyte.no           |              | (kunde)                                 |
-| 158.37.6.15 |                          |                              |              | (ledig)                                 |
+| 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no   |              | (ledig)                                 |
 | 158.37.6.16 |                          | srib-minecraft               |              | (kunde) (konrad)                        |
 | 158.37.6.17 |                          |                              |              | (ledig)                                 |
 | 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus)                               |
