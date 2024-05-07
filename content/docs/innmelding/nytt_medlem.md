@@ -51,6 +51,7 @@ den samme.
 2. Trykk på navnet på kanalen(helt øverst i kanal-listen til venstre), og velg
    "invite people" fra menyen.
 3. Herfra kan man enten sende ebrev eller generere en lenke
+4. Husk å legge til nytt medlem til alle kanaler.
 
 ## Andeby
 
