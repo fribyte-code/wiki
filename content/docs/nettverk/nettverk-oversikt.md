@@ -32,7 +32,7 @@ draft = false
 |             | 2001:700:201:1:5001::101 | lille-hjelper-1.fribyte.no   |              | Kubernetes agent node                   |
 |             | 2001:700:201:1:5001::102 | lille-hjelper-2.fribyte.no   |              | Kubernetes agent node                   |
 |             | 2001:700:201:1:5001::103 | lille-hjelper-3.fribyte.no   |              | Kubernetes agent node                   |
-| 158.37.6.1  |                          |                              |              | (ledig)                                 |
+| 158.37.6.1  |                          | guffen                       |              | guffen self hosted actions runner       |
 | 158.37.6.2  |                          |                              |              | (ledig)                                 |
 | 158.37.6.3  |                          |                              |              | (ledig)                                 |
 | 158.37.6.4  |                          | wiki.fribyte.no              |              | Zola wiki (konrad)                      |
@@ -44,7 +44,7 @@ draft = false
 | 158.37.6.10 |                          | dole.ss.uib.no               | carp1        | Felles addresse                         |
 | 158.37.6.11 |                          | klient.kvarteret.no          | carp1        | Felles addresse                         |
 | 158.37.6.12 |                          | Skaftetrynet.fribyte.no      |              | Proxmox node                            |
-| 158.37.6.13 |                          |                              |              | (ledig)                                 |
+| 158.37.6.13 |                          | rootlinjeforening.no         |              | (kunde)                                 |
 | 158.37.6.14 |                          | SUB-BSI.fribyte.no           |              | (kunde)                                 |
 | 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no   |              | (ledig)                                 |
 | 158.37.6.16 |                          | srib-minecraft               |              | (kunde) (konrad)                        |
