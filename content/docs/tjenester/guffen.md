@@ -53,3 +53,8 @@ Hvis actions scriptet inneholder et docker build step kreves ogsa følgende som 
         - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 ```
+
+## Sikkerhet
+Med bruken av en self hosted runner inngår det også visse regler man burde opprettholde for å unngå brudd på sikkerheten. Dette er fordi runneren kjører arbitrær kode som i teorien kan unnslippe sandbox miljøet. For å unngå slike situasjoner anbefales det å kun tillate actions scripts i offentlige repositories å kjøre på en godkjent merge med main branch.
+
+For fremtidig referanse se [GitHub runner sikkerhets dokumentasjon](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners#self-hosted-runner-security).
