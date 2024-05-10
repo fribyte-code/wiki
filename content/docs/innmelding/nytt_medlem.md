@@ -145,6 +145,11 @@ organisasjonen.
 3. Søk opp det nye medlemmets bruker.
 4. Profitt.
 
+Her er noen ting som bør gjøres av det nye medlemmet
+
+1. Legge til seg selv på fribyte.no medlemsliste (/content/kontakt/members.json)
+2. Legge til seg selv på admin-repoet medlemsliste (/medlemmer/medlemsliste.csv)
+
 ## Korttilgang til serverrommet
 
 For å gi det nye medlemmet korttilgang til serverrommet, så må kortsentralen

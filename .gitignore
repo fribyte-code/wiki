@@ -1,3 +1,4 @@
 /public
 docker-build.sh
 docker-serve.sh
+.DS_Store
