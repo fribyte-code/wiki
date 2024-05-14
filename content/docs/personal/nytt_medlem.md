@@ -168,5 +168,5 @@ gjør:
 
 ## Signal
 
-Ved tilfeller der Mattermost er nede så er Signal backup kommunikasjonsplatform.
+Ved tilfeller der Mattermost er nede, er Signal vår reserve kommunikasjonsplatform.
 Her må det nye medlemmet laste ned Signal og bli lagt til i gruppechatten.
