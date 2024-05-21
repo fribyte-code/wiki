@@ -74,13 +74,24 @@ Mattermost tilbyr et fint kommandolinjeverktøy,
 
 ## Fornye LetsEncrypt-sertifikat
 
-Mattermost do currently <b>not have automatic certificate renewal</b>, following steps need to be performed until we fix an automatic cron job or install nginx-acme-companion. 
+Mattermost do currently <b>not have automatic certificate renewal</b>, following
+steps need to be performed until we fix an automatic cron job or install
+nginx-acme-companion.
 
 Steg:
 
 1. Lag en sikkerhetskopi av `mattermost`-VM'en
 2. SSH inn i VM-en etter sikkerhetskopien er ferdig
 3. Kjør følgende kommandoer
+
+_For fremtidige generasjoner: for å kunne issue et nytt sertifikat kreves det at
+nginx_mattermost containeren er stoppet, dette er fordi certbot container
+scriptet krever å ta over port 80 midlertidig for å gjennomføre ssl handshake.
+Source: flere timers debugging_
+
+```sh
+sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml down
+```
 
 ```sh
 sudo docker run --rm --name certbot \
@@ -89,17 +100,26 @@ sudo docker run --rm --name certbot \
     -v "/home/fribyte/docker/certs/lib/letsencrypt:/var/lib/letsencrypt" \
     -v shared-webroot:/usr/share/nginx/html \
     certbot/certbot renew --webroot-path /usr/share/nginx/html
+```
 
-sudo docker restart nginx_mattermost
+```sh
+sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml up -d
+```
+
+### Lage nye sertifikat configs
+
+Skulle stegene over ikke fungere er det også mulig å lage nye sertifikat konfigurasjonsfiler med følgende kommando
+
+```sh
+bash scripts/issue-certificate.sh -d chat.fribyte.no -o ${PWD}/certs
 ```
 
 Commands are fetched from:
+
 - [https://docs.mattermost.com/install/install-docker.html](https://docs.mattermost.com/install/install-docker.html)
 - [https://github.com/mattermost/docker/blob/main/docs/issuing-letsencrypt-certificate.md](https://github.com/mattermost/docker/blob/main/docs/issuing-letsencrypt-certificate.md)
 
-
 4. Test om mattermost fortsatt fungerer ved å sende en melding
-
 
 ## Ting å være obs på
 
@@ -116,14 +136,14 @@ Commands are fetched from:
 
 ## Oppdater Mattermost
 
-1. Hent siste versjon av Mattermost  
-	- `sudo docker pull mattermost/mattermost-enterprise-edition:latest`
-2. Stopp Mattermost-containeren  
-	- `sudo docker stop mattermost`
-3. Sjekk om containeren "mattermost" er stoppa  
-	- `sudo docker ps -a`
-4. Sjekk om containeren "mattermost" er borte  
-	- `sudo docker rm mattermost`
-5. Hent siste versjon av Mattermost igjen  
-	- `sudo docker pull mattermost/mattermost-enterprise-edition:latest`
+1. Hent siste versjon av Mattermost
+   - `sudo docker pull mattermost/mattermost-enterprise-edition:latest`
+2. Stopp Mattermost-containeren
+   - `sudo docker stop mattermost`
+3. Sjekk om containeren "mattermost" er stoppa
+   - `sudo docker ps -a`
+4. Sjekk om containeren "mattermost" er borte
+   - `sudo docker rm mattermost`
+5. Hent siste versjon av Mattermost igjen
+   - `sudo docker pull mattermost/mattermost-enterprise-edition:latest`
 6. Kjør scriptet `./start_mm.sh`
