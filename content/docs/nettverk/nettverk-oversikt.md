@@ -46,9 +46,9 @@ draft = false
 | 158.37.6.12 |                          | Skaftetrynet.fribyte.no      |              | Proxmox node                            |
 | 158.37.6.13 |                          | rootlinjeforening.no         |              | (kunde)                                 |
 | 158.37.6.14 |                          | SUB-BSI.fribyte.no           |              | (kunde)                                 |
-| 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no   |              | (ledig)                                 |
+| 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no   |              | (kunde)                                 |
 | 158.37.6.16 |                          | srib-minecraft               |              | (kunde) (konrad)                        |
-| 158.37.6.17 |                          |                              |              | (ledig)                                 |
+| 158.37.6.17 |                          | mso.fribyte.no               |              | (kunde)                                 |
 | 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus)                               |
 | 158.37.6.19 |                          | pengebingen                  |              | Docker-øko (intern) (konrad)            |
 | 158.37.6.20 |                          | pluto.ss.uib.no              |              | Gammel webside server                   |
