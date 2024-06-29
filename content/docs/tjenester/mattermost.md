@@ -84,11 +84,6 @@ Steg:
 2. SSH inn i VM-en etter sikkerhetskopien er ferdig
 3. Kjør følgende kommandoer
 
-_For fremtidige generasjoner: for å kunne issue et nytt sertifikat kreves det at
-nginx_mattermost containeren er stoppet, dette er fordi certbot container
-scriptet krever å ta over port 80 midlertidig for å gjennomføre ssl handshake.
-Source: flere timers debugging_
-
 ```sh
 sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml down
 ```
@@ -109,6 +104,11 @@ sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.ng
 ### Lage nye sertifikat configs
 
 Skulle stegene over ikke fungere er det også mulig å lage nye sertifikat konfigurasjonsfiler med følgende kommando
+
+_For fremtidige generasjoner: for å kunne issue et nytt sertifikat kreves det at
+nginx_mattermost containeren er stoppet, dette er fordi certbot container
+scriptet krever å ta over port 80 midlertidig for å gjennomføre ssl handshake.
+Source: flere timers debugging_
 
 ```sh
 bash scripts/issue-certificate.sh -d chat.fribyte.no -o ${PWD}/certs
