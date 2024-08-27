@@ -49,7 +49,7 @@ draft = false
 | 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no   |              | (kunde)                                 |
 | 158.37.6.16 |                          | srib-minecraft               |              | (kunde) (konrad)                        |
 | 158.37.6.17 |                          | mso.fribyte.no               |              | (kunde)                                 |
-| 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus) Gammel, bruk 48 og 49         |
+| 158.37.6.18 |                          | haproxy1.ss.uib.no           |              | (dunstus) Gammel, bruk 48 og 49 cl      |
 | 158.37.6.19 |                          | pengebingen                  |              | Docker-øko (intern) (konrad)            |
 | 158.37.6.20 |                          | pluto.ss.uib.no              |              | Gammel webside server                   |
 | 158.37.6.21 | 2001:700:201:1::d1       | ns1.fribyte.no               |              | Navnetjener                             |
@@ -70,9 +70,9 @@ draft = false
 | 158.37.6.35 |                          | andeby.ss.uib.no             | br0:0 (eth0) | Peker mot bestemor                      |
 | 158.37.6.36 | 2001:700:201:1::3002     | studvest                     | eth0         | Docker-øko, (kunde) (konrad)            |
 | 158.37.6.37 |                          | db.fribyte.no                |              | Database server for SRIB radio, bstv.no |
-| 158.37.6.39 |                          |                              |              | (ledig)                                 |
+| 158.37.6.39 |                          |                              |              | (ledig) (unknown service running on)    |
 | 158.37.6.40 | 2001:700:201:1::7001     | bingen.ss.uib.no             | eth0         | Backup maskin                           |
-| 158.37.6.41 |                          |                              |              | (ledig)                                 |
+| 158.37.6.41 |                          | galene.fribyte.no            |              | Galene streaming tjeneste               |
 | 158.37.6.42 |                          |                              |              | (ledig)                                 |
 | 158.37.6.43 |                          | skrue                        |              | Backup maskin                           |
 | 158.37.6.44 | 2001:700:201:1::3004     | solveig                      | eth0         | ganeti host master                      |
