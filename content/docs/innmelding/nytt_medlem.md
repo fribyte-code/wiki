@@ -68,9 +68,9 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 `ssh-keygen -t ed25519 -C "your_email@example.com"` for å generere en SSH-nøkkel. Få mer info:
    [Github docs, how to generate a new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-2. Dette er noe et aktivt medlem må gjøre.
-   
-3. Hente .pub key fra det nye medlemmet, skriv ut public key med `cat .\publickey.pub` og sende det til deg i friByte chat. 
+2. Hente .pub key fra det nye medlemmet, skriv ut public key med `cat .ssh/*.pub` og sende det til aktivt medlem i friByte chat. 
+
+3. Neste steg må et aktivt medlem i friByte som har tilgang til Andeby gjøre
 
 4. Koble til bestemor via `ssh root@andeby.fribyte.no`. Dette er gatewayen til resten av våre kjære maskiner. 
 
