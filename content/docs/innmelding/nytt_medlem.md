@@ -76,7 +76,7 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 
 5. Åpne authorized_keys i ditt favoritt text editor, nano for eksempel: `nano ~/.ssh/authorized_keys`. 
 
-6. Skriv navnet til det nye medlemmet og paste inn ssh key. 
+6. Skriv navnet til det nye medlemmet og lim inn ssh-nøkkelen. 
 
 7. Commence hostile takeover!
 
