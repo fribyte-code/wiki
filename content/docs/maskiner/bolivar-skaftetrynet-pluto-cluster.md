@@ -1,8 +1,6 @@
 +++
 title = "Bolivar Skaftetrynet Pluto Proxmox Cluster"
 description = "Description of proxmox cluster setup on Bolivar Skaftetrynet and Pluto"
-date = 2023-05-02T16:19:00+00:00
-updated = 2023-05-02T16:19:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

@@ -1,8 +1,6 @@
 +++
 title = "Passord - Bitwarden"
 description = "Hvordan vi holder styr på passord"
-date = 2022-03-19T17:00:00+00:00
-updated = 2022-03-19T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 2

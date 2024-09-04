@@ -1,8 +1,6 @@
 +++
 title = "Nytt medlem"
 description = "Hvordan innføre nytt medlem"
-date = 2022-02-23T08:00:00+00:00
-updated = 2024-04-16
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -160,7 +158,8 @@ Som en god øvelse i git, kan det nye medlemmet gjøre det selv. Dette er hva en
 gjør:
 
 1. Klon, eller dra ned, siste versjon av github-repoet vårt som heter `admin`.
-2. Åpne filen `medlemmer/legitimasjon/kortnummer` med ditt foretrukne tekstredigeringsprogram.
+2. Åpne filen `medlemmer/legitimasjon/kortnummer` med ditt foretrukne
+   tekstredigeringsprogram.
 3. Skriv inn kortnummeret ditt, lagre og lukk filen.
 4. Etabler forandringene og dytt dem til master.
 5. Leder må dermed sende mail til kortsenteret med en liste av kortnummerene, se

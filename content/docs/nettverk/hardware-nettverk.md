@@ -1,8 +1,6 @@
 +++
 title = "Hardware nettverk"
 description = "En gjennomgang av pf-regelsettet som er i produksjon"
-date = 2013-06-05T18:53:00+00:00
-updated = 2021-02-26T18:53:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

@@ -1,8 +1,6 @@
 +++
 title = "Domener"
 description = "Hvordan sette opp domener"
-date = 2022-02-06T08:00:00+00:00
-updated = 2022-01-18T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -13,7 +11,9 @@ draft = false
 
 1. Ta turen til bestemor `ssh root@bestemor.s.fribyte.no`
 2. `ssh fribyte@ns1.fribyte.no`
-3. Oppdater passende domene ved å kjøre scriptet `./update_zone.sh fribyte.no` (bruk noe annet enn fribyte.no for å redigere domener som ikke er .fribyte.no)
+3. Oppdater passende domene ved å kjøre scriptet `./update_zone.sh fribyte.no`
+   (bruk noe annet enn fribyte.no for å redigere domener som ikke er
+   .fribyte.no)
 4. Legg til passende entry
 5. Oppdater serial `{år}{måned}{dato}{hh}` -> `2022020618`
 

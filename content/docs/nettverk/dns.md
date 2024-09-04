@@ -1,8 +1,6 @@
 +++
 title = "DNS"
 description = "Informasjon om DNS-tjenesten til friByte"
-date = 2022-03-06T17:11:00+00:00
-updated = 2024-02-24T04:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

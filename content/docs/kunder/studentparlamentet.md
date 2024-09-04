@@ -1,8 +1,6 @@
 +++
 title = "Studentparlamentet"
 description = "Informasjon om Studentparlamentet"
-date = 2022-03-16T16:36:00+00:00
-updated = 2022-03-16T16:36:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

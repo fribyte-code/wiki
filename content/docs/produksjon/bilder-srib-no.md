@@ -1,23 +1,21 @@
 +++
 title = "bilder.srib.no"
 description = "Forklaring på hvordan bildelagringstjenesten til studentradioen er rigget opp"
-date = 2024-02-10T08:00:00+00:00
-updated = 2024-02-10T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
 +++
 
-
 ### Kort forklaring
 
-Dette er en tjeneste som studentradioen "bruker" for å lagre bildene sine. Det er en tjeneste som heter [PhotoPrism](https://github.com/photoprism/photoprism). 
+Dette er en tjeneste som studentradioen "bruker" for å lagre bildene sine. Det
+er en tjeneste som heter [PhotoPrism](https://github.com/photoprism/photoprism).
 
 ### Docker compose fil
 
 ```yaml
-version: '3.5'
+version: "3.5"
 
 # Example Docker Compose config file for PhotoPrism (Linux / AMD64)
 #
@@ -72,34 +70,34 @@ services:
     ports:
       - "2342:2342" # HTTP port (host:container)
     environment:
-      PHOTOPRISM_ADMIN_PASSWORD: "kekekek"  # YOUR INITIAL ADMIN PASSWORD (MINIMUM 8 CHARACTERS, USERNAME "admin")
-      PHOTOPRISM_SITE_URL: "https://bilder.srib.no/"  # public server URL incl http:// or https:// and /path, :port(2342) is optional
-      PHOTOPRISM_ORIGINALS_LIMIT: 50000               # file size limit for originals in MB (increase for high-res video)
-      PHOTOPRISM_HTTP_COMPRESSION: "gzip"            # improves transfer speed and bandwidth utilization (none or gzip)
-      PHOTOPRISM_LOG_LEVEL: "info"                   # log level: trace, debug, info, warning, error, fatal, or panic
-      PHOTOPRISM_PUBLIC: "false"                     # no authentication required (disables password protection)
-      PHOTOPRISM_READONLY: "false"                   # do not modify originals directory (reduced functionality)
-      PHOTOPRISM_EXPERIMENTAL: "false"               # enables experimental features
-      PHOTOPRISM_DISABLE_CHOWN: "false"              # disables storage permission updates on startup
-      PHOTOPRISM_DISABLE_WEBDAV: "false"             # disables built-in WebDAV server
-      PHOTOPRISM_DISABLE_SETTINGS: "false"           # disables settings UI and API
-      PHOTOPRISM_DISABLE_TENSORFLOW: "true"         # disables all features depending on TensorFlow
-      PHOTOPRISM_DISABLE_FACES: "true"              # disables facial recognition
-      PHOTOPRISM_DISABLE_CLASSIFICATION: "false"     # disables image classification
-      PHOTOPRISM_DISABLE_RAW: "false"                # disables indexing and conversion of RAW files
-      PHOTOPRISM_RAW_PRESETS: "false"                # enables applying user presets when converting RAW files (reduces performance)
-      PHOTOPRISM_JPEG_QUALITY: 85                    # image quality, a higher value reduces compression (25-100)
-      PHOTOPRISM_DETECT_NSFW: "false"                # flag photos as private that MAY be offensive (requires TensorFlow)
-      PHOTOPRISM_UPLOAD_NSFW: "true"                 # allows uploads that MAY be offensive
+      PHOTOPRISM_ADMIN_PASSWORD: "kekekek" # YOUR INITIAL ADMIN PASSWORD (MINIMUM 8 CHARACTERS, USERNAME "admin")
+      PHOTOPRISM_SITE_URL: "https://bilder.srib.no/" # public server URL incl http:// or https:// and /path, :port(2342) is optional
+      PHOTOPRISM_ORIGINALS_LIMIT: 50000 # file size limit for originals in MB (increase for high-res video)
+      PHOTOPRISM_HTTP_COMPRESSION: "gzip" # improves transfer speed and bandwidth utilization (none or gzip)
+      PHOTOPRISM_LOG_LEVEL: "info" # log level: trace, debug, info, warning, error, fatal, or panic
+      PHOTOPRISM_PUBLIC: "false" # no authentication required (disables password protection)
+      PHOTOPRISM_READONLY: "false" # do not modify originals directory (reduced functionality)
+      PHOTOPRISM_EXPERIMENTAL: "false" # enables experimental features
+      PHOTOPRISM_DISABLE_CHOWN: "false" # disables storage permission updates on startup
+      PHOTOPRISM_DISABLE_WEBDAV: "false" # disables built-in WebDAV server
+      PHOTOPRISM_DISABLE_SETTINGS: "false" # disables settings UI and API
+      PHOTOPRISM_DISABLE_TENSORFLOW: "true" # disables all features depending on TensorFlow
+      PHOTOPRISM_DISABLE_FACES: "true" # disables facial recognition
+      PHOTOPRISM_DISABLE_CLASSIFICATION: "false" # disables image classification
+      PHOTOPRISM_DISABLE_RAW: "false" # disables indexing and conversion of RAW files
+      PHOTOPRISM_RAW_PRESETS: "false" # enables applying user presets when converting RAW files (reduces performance)
+      PHOTOPRISM_JPEG_QUALITY: 85 # image quality, a higher value reduces compression (25-100)
+      PHOTOPRISM_DETECT_NSFW: "false" # flag photos as private that MAY be offensive (requires TensorFlow)
+      PHOTOPRISM_UPLOAD_NSFW: "true" # allows uploads that MAY be offensive
       # PHOTOPRISM_DATABASE_DRIVER: "sqlite"         # SQLite is an embedded database that doesn't require a server
-      PHOTOPRISM_DATABASE_DRIVER: "mysql"            # use MariaDB 10.5+ or MySQL 8+ instead of SQLite for improved performance
-      PHOTOPRISM_DATABASE_SERVER: "mariadb:3306"     # MariaDB or MySQL database server (hostname:port)
-      PHOTOPRISM_DATABASE_NAME: "photoprism_db"         # MariaDB or MySQL database schema name
-      PHOTOPRISM_DATABASE_USER: "photoprism"         # MariaDB or MySQL database user name
-      PHOTOPRISM_DATABASE_PASSWORD: "lololol"       # MariaDB or MySQL database user password
+      PHOTOPRISM_DATABASE_DRIVER: "mysql" # use MariaDB 10.5+ or MySQL 8+ instead of SQLite for improved performance
+      PHOTOPRISM_DATABASE_SERVER: "mariadb:3306" # MariaDB or MySQL database server (hostname:port)
+      PHOTOPRISM_DATABASE_NAME: "photoprism_db" # MariaDB or MySQL database schema name
+      PHOTOPRISM_DATABASE_USER: "photoprism" # MariaDB or MySQL database user name
+      PHOTOPRISM_DATABASE_PASSWORD: "lololol" # MariaDB or MySQL database user password
       PHOTOPRISM_SITE_CAPTION: "Studentradioen i Bergen"
-      PHOTOPRISM_SITE_DESCRIPTION: "Bildene til SRiB"    # meta site description
-      PHOTOPRISM_SITE_AUTHOR: "SRiB"                         # meta site author
+      PHOTOPRISM_SITE_DESCRIPTION: "Bildene til SRiB" # meta site description
+      PHOTOPRISM_SITE_AUTHOR: "SRiB" # meta site author
       #PHOTOPRISM_DEBUG: "true"
       ## Run/install on first startup (options: update, gpu, tensorflow, davfs, clitools, clean):
       # PHOTOPRISM_INIT: "gpu tensorflow"
@@ -129,10 +127,10 @@ services:
     ## Storage Folders: "~" is a shortcut for your home directory, "." for the current directory
     volumes:
       # "/host/folder:/photoprism/folder"                # Example
-      - "/home/fribyte/photoprism/srib-bilder:/photoprism/originals"               # Original media files (DO NOT REMOVE
+      - "/home/fribyte/photoprism/srib-bilder:/photoprism/originals" # Original media files (DO NOT REMOVE
       # - "/example/family:/photoprism/originals/family" # *Additional* media folders can be mounted like this
       # - "~/Import:/photoprism/import"                  # *Optional* base folder from which files can be imported to originals
-      - "./storage:/photoprism/storage"                  # *Writable* storage folder for cache, database, and sidecar files (DO NOT REMOVE) 
+      - "./storage:/photoprism/storage" # *Writable* storage folder for cache, database, and sidecar files (DO NOT REMOVE)
       - "/home/fribyte/photoprism/srib-bilder"
     networks:
       - frontend
@@ -147,7 +145,11 @@ services:
     security_opt:
       - seccomp:unconfined
       - apparmor:unconfined
-    command: mysqld --innodb-buffer-pool-size=128M --transaction-isolation=READ-COMMITTED --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --max-connections=512 --innodb-rollback-on-timeout=OFF --innodb-lock-wait-timeout=120
+    command:
+      mysqld --innodb-buffer-pool-size=128M
+      --transaction-isolation=READ-COMMITTED --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci --max-connections=512
+      --innodb-rollback-on-timeout=OFF --innodb-lock-wait-timeout=120
     ## Never store database files on an unreliable device such as a USB flash drive, an SD card, or a shared network folder:
     volumes:
       - "./database:/var/lib/mysql" # DO NOT REMOVE
@@ -175,37 +177,47 @@ services:
   #     - "~/.docker/config.json:/config.json" # optional, for authentication if you have a Docker Hub account
   #
 networks:
- frontend:
-  external: true
+  frontend:
+    external: true
 ```
 
 Det som er greit å bemerke seg her, er dette:
 
 ```yaml
-    volumes:
-      (...)
+volumes: (...)
 
-      - "/home/fribyte/photoprism/srib-bilder:/photoprism/originals"
-      
-      (...)
+  - "/home/fribyte/photoprism/srib-bilder:/photoprism/originals"
 
-      - "/home/fribyte/photoprism/srib-bilder"
+  (...)
+
+  - "/home/fribyte/photoprism/srib-bilder"
 ```
 
-Vi importerer en lokal mappe på VM-en inn i Docker-beholderen. Dette er samme praksis som [podcast.srib.no](/docs/produksjon/podcast-srib-no)
+Vi importerer en lokal mappe på VM-en inn i Docker-beholderen. Dette er samme
+praksis som [podcast.srib.no](/docs/produksjon/podcast-srib-no)
 
-Den lokale mappen er også en importert mappe fra NAS-et til Studentradioen. Vi bruker den følgende linjen i fstab for å importere mappen fra NAS-et. 
+Den lokale mappen er også en importert mappe fra NAS-et til Studentradioen. Vi
+bruker den følgende linjen i fstab for å importere mappen fra NAS-et.
 
 ```
 //158.37.6.118/Bilder/  /home/fribyte/photoprism/srib-bilder    cifs    vers=3.0,username=fribyte,password=aiaiaiai,noexec  0 0
 ```
-Brukernavn og passord, er til brukeren i NAS-et til studentradioen. Fildelingen krever at studentradioen godkjenner at vi kan koble oss til NAS-et deres, gjennom programvaren til NAS-et deres. Passordet kan du finne i [bitwarden.fribyte.no](https://bitwarden.fribyte.no)
 
-Dette er for både lesing og skriving, selvfølgelig. Filer som ligger i den mappen på NAS-et blir vist i `bilder.srib.no`, og alle bilder som blir lastet opp til `bilder.srib.no`, ender opp på NAS-et deres.
+Brukernavn og passord, er til brukeren i NAS-et til studentradioen. Fildelingen
+krever at studentradioen godkjenner at vi kan koble oss til NAS-et deres,
+gjennom programvaren til NAS-et deres. Passordet kan du finne i
+[bitwarden.fribyte.no](https://bitwarden.fribyte.no)
 
-NAS-et deres er av typen QNAP TS-853BU, [og du kan lese mer om det her](https://wiki.srib.no/docs/machines/servers/mimir/).
+Dette er for både lesing og skriving, selvfølgelig. Filer som ligger i den
+mappen på NAS-et blir vist i `bilder.srib.no`, og alle bilder som blir lastet
+opp til `bilder.srib.no`, ender opp på NAS-et deres.
 
+NAS-et deres er av typen QNAP TS-853BU,
+[og du kan lese mer om det her](https://wiki.srib.no/docs/machines/servers/mimir/).
 
 ### client_max_body_size problemer
 
-I utgangspunktet var det et problem med at størrelsen på bildet som ble forsøkt lastet opp var for stort. Dette var fordi `client_max_body_size` i nginx-proxy sin nginx.conf var satt 1MB, mens Azuracast sin `client_max_body_size` var satt til 50MB. Så da satte vi nginx-proxy sin `client_max_body_size` til 50MB også. 
+I utgangspunktet var det et problem med at størrelsen på bildet som ble forsøkt
+lastet opp var for stort. Dette var fordi `client_max_body_size` i nginx-proxy
+sin nginx.conf var satt 1MB, mens Azuracast sin `client_max_body_size` var satt
+til 50MB. Så da satte vi nginx-proxy sin `client_max_body_size` til 50MB også.

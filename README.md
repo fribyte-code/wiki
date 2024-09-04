@@ -19,7 +19,7 @@ https://getzola.org.
 
 ## Miljø-krav
 
-Zola versjon >=0.13.0 (se zola-dokumentasjon instrukser)
+Zola versjon >=0.19.0 (se zola-dokumentasjon instrukser)
 
 ## Problemstillingen
 
@@ -34,7 +34,7 @@ oppdateres hver gang vi oppdaterer repoet.
 For å implementere dette, bruker vi GitHub actions som bygger den statiske siden
 ved merge til master, og rsync-er resultatet til server.
 
-Det er også en action for å validere endringer som er gjort ved opprettelse av 
+Det er også en action for å validere endringer som er gjort ved opprettelse av
 pull request til master, slik at vi ikke merger inn ødeleggende endringer.
 
 ## Kommandoer
@@ -52,4 +52,3 @@ side.
 - I skrivende stund bruker wikien en ferdiglaget utforming som heter adidoks.
   Den er å finne på zola sine nettsider. Følg instruksene gitt av adidoks for
   hvordan man legger til nytt innhold.
-
