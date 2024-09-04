@@ -1,8 +1,6 @@
 +++
 title = "Studvest"
 description = "Studvest"
-date = 2023-01-12T15:51:00+00:00
-updated = 2023-01-12T15:51:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -26,8 +24,8 @@ til Skrue.
 
 Sist Oppdatert: 12.01.2023
 
-| Domenenavn                                       | Kort forklaring                   |
-| ------------------------------------------------ | --------------------------------- |
+| Domenenavn                                               | Kort forklaring                   |
+| -------------------------------------------------------- | --------------------------------- |
 | [studvest.no](https://studvest.no)                       | Hovedside, ikke vertet av friByte |
 | [studvest-nc.fribyte.no](https://studvest-nc.fribyte.no) | Nextcloud server for Studvest     |
 

@@ -1,8 +1,6 @@
 +++
 title = "Bergen Student-TV"
 description = "Informasjon om BSTV"
-date = 2022-03-06T15:51:00+00:00
-updated = 2022-03-06T15:51:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -24,8 +22,8 @@ tilbake enda, men har forespurt om beslutningen deres.
 
 Sist Oppdatert: 06.03.2022
 
-| Domenenavn                       | Kort forklaring                |
-| -------------------------------- | ------------------------------ |
+| Domenenavn                               | Kort forklaring                |
+| ---------------------------------------- | ------------------------------ |
 | [bstv.no](https://bstv.no)               | Wordpress-hovedside            |
 | [intern.bstv.no](https://intern.bstv.no) | Fungerer ikke, 503-feilmelding |
 | [utstyr.bstv.no](https://utstyr.bstv.no) | Meeting Room Booking System    |

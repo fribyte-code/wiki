@@ -1,8 +1,6 @@
 +++
 title = "High availability for VM"
 description = ""
-date = 2022-03-16
-updated = 2022-03-16
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3

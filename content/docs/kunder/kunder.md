@@ -1,8 +1,6 @@
 +++
 title = "Kunder - Sammendrag"
 description = "Oversikt over kunder og hva vi drifter for de"
-date = 2022-01-18T08:00:00+00:00
-updated = 2024-02-22T00:13:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 2
@@ -72,4 +70,4 @@ Linjeforeningen for geologistudentene ved UiB
 
 - Nettside verting
   - www.rootlinjeforening.no
-  - *.rootlinjeforening.no
+  - \*.rootlinjeforening.no

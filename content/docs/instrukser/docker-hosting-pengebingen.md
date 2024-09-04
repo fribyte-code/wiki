@@ -1,8 +1,6 @@
 +++
 title = "Docker-hosting Pengebingen"
 description = "Hvordan hoste docker containere"
-date = 2022-01-18T08:00:00+00:00
-updated = 2022-03-14
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

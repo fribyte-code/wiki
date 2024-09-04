@@ -1,8 +1,6 @@
 +++
 title = "Ny VM med Wordpress"
 description = "Ny VM med Wordpress"
-date = 2023-03-29T08:00:00+00:00
-updated = 2023-03-29
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

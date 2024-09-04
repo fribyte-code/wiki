@@ -1,8 +1,6 @@
 +++
 title = "Kommunikasjon - Sammendrag"
 description = "Våre kommunikasjonskanaler"
-date = 2022-01-18T08:00:00+00:00
-updated = 2024-01-18T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 2

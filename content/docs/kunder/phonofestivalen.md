@@ -1,8 +1,6 @@
 +++
 title = "Phonofestivalen"
 description = "Informasjon om Phonofestivalen"
-date = 2022-03-06T16:36:00+00:00
-updated = 2022-03-06T16:36:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -26,8 +24,8 @@ har signert enda. Vi avventer i skrivende stund signaturen deres.
 
 Sist oppdatert: 06.03.2022
 
-| Domenenavn                               | Kort forklaring                                |
-| ---------------------------------------- | ---------------------------------------------- |
+| Domenenavn                                       | Kort forklaring                                |
+| ------------------------------------------------ | ---------------------------------------------- |
 | [Phonofestivalen.no](https://phonofestivalen.no) | Wordpress-hovedside; er for øyeblikket parkert |
 
 ### Kontaktinformasjon

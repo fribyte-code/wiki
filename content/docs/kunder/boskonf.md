@@ -1,8 +1,6 @@
 +++
 title = "Boskonf"
 description = "Bergen Open Source"
-date = 2024-01-09T15:51:00+00:00
-updated = 2024-01-09T15:51:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -25,6 +23,6 @@ til Pengebingen via SSH.
 
 Sist Oppdatert: 09.01.2024
 
-| Domenenavn               | Kort forklaring |
-| ------------------------ | --------------- |
+| Domenenavn                       | Kort forklaring |
+| -------------------------------- | --------------- |
 | [boskonf.no](https://boskonf.no) | Hovedside       |

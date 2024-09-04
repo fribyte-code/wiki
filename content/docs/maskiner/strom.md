@@ -1,8 +1,6 @@
 +++
 title = "Strøm"
 description = "Strøm oversikt"
-date = 2023-04-25T19:22:00+00:00
-updated = 2023-04-25T19:22:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

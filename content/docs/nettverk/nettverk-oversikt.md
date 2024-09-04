@@ -1,8 +1,6 @@
 +++
 title = "Nettverksoversikt"
 description = "Et forsøk på å få oversikt over maskiner på nettverket"
-date = 2022-03-17T04:22:00+00:00
-updated = 2022-03-28T04:22:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

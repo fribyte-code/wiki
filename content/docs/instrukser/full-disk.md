@@ -1,8 +1,6 @@
 +++
 title = "Fikse 100% full disk"
 description = "Fikse 100% full disk"
-date = 2022-03-27T08:00:00+00:00
-updated = 2022-03-27T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

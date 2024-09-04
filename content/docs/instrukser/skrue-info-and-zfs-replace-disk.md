@@ -1,8 +1,6 @@
 +++
 title = "Skrue Info + Replace disk ZFS"
 description = "Info about Skrue and how to replace a disk in ZFS"
-date = 2022-09-22T08:00:00+00:00
-updated = 2022-09-22
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

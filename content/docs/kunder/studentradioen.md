@@ -1,8 +1,6 @@
 +++
 title = "Studentradioen i Bergen"
 description = "Informasjon om SRiB"
-date = 2022-03-06T14:00:00+00:00
-updated = 2022-03-06T14:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -27,18 +25,18 @@ neste år.
 
 ## Tjenester
 
-| Tjeneste og domenenavn | Kort Forklaring |
-| ---------------------- | --------------- |
-| [srib.no](/docs/produksjon/srib-no) | Wordpress-hovedside |
-| [booking.srib.no](/docs/produksjon/booking-srib-no) | Meeting Room Booking System - for å reservere rom |
-| [skjema.srib.no](/docs/produksjon/skjema-srib-no) | LimeSurvey - for skreddersydde spørreundersøkelser |
-| [wiki.srib.no](/docs/produksjon/wiki-srib-no) | Statisk side laget med Hugo. bruker Docsy-themet. |
+| Tjeneste og domenenavn                              | Kort Forklaring                                                                                                                                                                                               |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [srib.no](/docs/produksjon/srib-no)                 | Wordpress-hovedside                                                                                                                                                                                           |
+| [booking.srib.no](/docs/produksjon/booking-srib-no) | Meeting Room Booking System - for å reservere rom                                                                                                                                                             |
+| [skjema.srib.no](/docs/produksjon/skjema-srib-no)   | LimeSurvey - for skreddersydde spørreundersøkelser                                                                                                                                                            |
+| [wiki.srib.no](/docs/produksjon/wiki-srib-no)       | Statisk side laget med Hugo. bruker Docsy-themet.                                                                                                                                                             |
 | [podcast.srib.no](/docs/produksjon/podcast-srib-no) | RSS-generator skrevet i Django. Brukes for å lage RSS-strømmer til hver podcast. Kildekode: https://github.com/srib-dev/podkast.srib.no. Et docker image er bygget i srib-radio vm med secrets og kjører der. |
-| [bilder.srib.no](/docs/produksjon/bilder-srib-no) | PhotoPrism - bildegalleri for alle bilder radioen vil ta vare på |
-| [radio.srib.no](/docs/produksjon/radio-srib-no) | AzuraCast - Nettradiotjeneste bygget på IceCast og LiquidSoap |
-| [lytt.srib.no](/docs/produksjon/lytt-srib-no) | Statisk nettside som serverer en ferdiglaget iframe-tag fra AzuraCast |
-| [Intern.srib.no](/docs/produksjon/intern-srib-no) | Dokumentdelingstjeneste brukt av produsentene. deres |
-| Database for digas | Digas er radiospesifikk programvare. Vertet i VM med navn "Database" |
+| [bilder.srib.no](/docs/produksjon/bilder-srib-no)   | PhotoPrism - bildegalleri for alle bilder radioen vil ta vare på                                                                                                                                              |
+| [radio.srib.no](/docs/produksjon/radio-srib-no)     | AzuraCast - Nettradiotjeneste bygget på IceCast og LiquidSoap                                                                                                                                                 |
+| [lytt.srib.no](/docs/produksjon/lytt-srib-no)       | Statisk nettside som serverer en ferdiglaget iframe-tag fra AzuraCast                                                                                                                                         |
+| [Intern.srib.no](/docs/produksjon/intern-srib-no)   | Dokumentdelingstjeneste brukt av produsentene. deres                                                                                                                                                          |
+| Database for digas                                  | Digas er radiospesifikk programvare. Vertet i VM med navn "Database"                                                                                                                                          |
 
 ## Oppsett
 
