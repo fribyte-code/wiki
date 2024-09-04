@@ -36,8 +36,8 @@ For å lage en ny epost-adresse for det nye medlemmet.
 4. Under Overview -> Delegation
 5. Legg til ny epost addresse i tekstfeltet for Local
    Recipients
-6. Save Changes
-7. Even more Profitt
+6. Lagre endringer
+7. Enda mer profitt
 
 ## Mattermost
 
