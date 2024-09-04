@@ -74,7 +74,7 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 
 4. Koble til bestemor via `ssh root@andeby.fribyte.no`. Dette er gatewayen til resten av våre kjære maskiner. 
 
-5. Åpne authorized_keys i ditt favoritt text editor, nano for eksempel: `nano ~/.ssh/authorized_keys`. 
+5. Åpne authorized_keys i din favoritt kode-redaktør, nano for eksempel: `nano ~/.ssh/authorized_keys`. 
 
 6. Skriv navnet til det nye medlemmet og paste inn ssh key. 
 
