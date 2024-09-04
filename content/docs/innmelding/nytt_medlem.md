@@ -70,15 +70,13 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 
 2. Hente .pub key fra det nye medlemmet, skriv ut public key med `cat .ssh/*.pub` og sende det til aktivt medlem i friByte chat. 
 
-3. Neste steg må et aktivt medlem i friByte som har tilgang til Andeby gjøre
+3. Neste steg må et aktivt medlem i friByte som har tilgang til Andeby gjøre.
 
 4. Koble til bestemor via `ssh root@andeby.fribyte.no`. Dette er gatewayen til resten av våre kjære maskiner. 
 
 5. Åpne authorized_keys i din favoritt kode-redaktør, nano for eksempel: `nano ~/.ssh/authorized_keys`. 
 
 6. Skriv navnet til det nye medlemmet og lim inn ssh-nøkkelen. 
-
-7. Commence hostile takeover!
 
 
 ## Wireguard
