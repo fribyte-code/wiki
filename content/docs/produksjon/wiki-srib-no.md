@@ -1,8 +1,6 @@
 +++
 title = "wiki.srib.no"
 description = "Forklaring på hvordan wiki-siden er skrudd sammen"
-date = 2024-01-25T08:00:00+00:00
-updated = 2024-01-25T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -11,7 +9,10 @@ draft = false
 
 ### Kort forklaring
 
-Wiki-siden til radioen er statisk nettside, laget med [Docsy-temaet til Hugo](https://github.com/google/docsy). Du kan finne [repoet til koden her](https://github.com/srib-dev/wiki). Repoet er egentlig bare klonet fra det originale repoet og kjører i en docker-beholder.
+Wiki-siden til radioen er statisk nettside, laget med
+[Docsy-temaet til Hugo](https://github.com/google/docsy). Du kan finne
+[repoet til koden her](https://github.com/srib-dev/wiki). Repoet er egentlig
+bare klonet fra det originale repoet og kjører i en docker-beholder.
 
 ### Docker compose fil
 
@@ -37,6 +38,6 @@ services:
       - frontend
 
 networks:
- frontend:
-  external: true
+  frontend:
+    external: true
 ```

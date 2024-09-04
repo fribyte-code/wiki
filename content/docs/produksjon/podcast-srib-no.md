@@ -1,8 +1,6 @@
 +++
 title = "podcast.srib.no"
 description = "Forklaring på hvordan podcast-tjenesten til studentradioen er rigget opp"
-date = 2024-01-23T08:00:00+00:00
-updated = 2024-02-10T08:00:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5

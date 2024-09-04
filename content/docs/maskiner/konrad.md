@@ -1,8 +1,6 @@
 +++
 title = "Konrad"
 description = "Oversikt over Konrad"
-date = 2022-03-17T16:19:00+00:00
-updated = 2022-09-22T16:19:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1
@@ -11,7 +9,9 @@ draft = false
 
 # Konrad
 
-**NB!** Konrad har problemer med å lagre BIOS konfigurasjon. Det er VELDIG VIKTIG at når Konrad rebootes så må man velge boot device. Gå inn i BIOS under boot, velg boot option med "Linux" i navnet. 
+**NB!** Konrad har problemer med å lagre BIOS konfigurasjon. Det er VELDIG
+VIKTIG at når Konrad rebootes så må man velge boot device. Gå inn i BIOS under
+boot, velg boot option med "Linux" i navnet.
 
 ## Proxmox
 
@@ -40,4 +40,3 @@ Vi satte opp serveren med lagring som beskrevet under
 [lagringsoppsett](#lagringsoppsett). Noen av diskene var satt opp i raid med
 lvm, disse ble wipet ved å bruke `lvremove` og `mdadm`. Vi prøvde tidligere et
 annet Alreca HBA kort, som ikke fungerte bra i denne serveren.
-

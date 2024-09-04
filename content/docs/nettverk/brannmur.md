@@ -1,8 +1,6 @@
 +++
 title = "Redundant brannmur"
 description = "Informasjon om brannmuren til friByte"
-date = 2022-03-06T18:22:00+00:00
-updated = 2022-03-06T18:22:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1

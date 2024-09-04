@@ -1,8 +1,6 @@
 +++
 title = "Placeholder Text"
 description = "Lorem Ipsum Dolor Si Amet"
-date = 2021-04-10T09:19:42+00:00
-updated = 2021-04-10T09:19:42+00:00
 draft = false
 template = "blog/page.html"
 
@@ -23,7 +21,8 @@ cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
 4. Spargitque ferrea quos palude
 
 Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus
-silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.
+silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus
+malis.
 
 1. Comas hunc haec pietate fetum procerum dixit
 2. Post torum vates letum Tiresia
@@ -41,9 +40,9 @@ silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus mali
 
 Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit
 colit est profanae esse virescere furit nec; iaculi matertera et visa est,
-viribus. Divesque creatis, tecta novat collumque vulnus est, parvas.
-**Faces illo pepulere** tempus adest. Tendit flamma, ab opes virum sustinet,
-sidus sequendo urbis.
+viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. **Faces
+illo pepulere** tempus adest. Tendit flamma, ab opes virum sustinet, sidus
+sequendo urbis.
 
 Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli
 Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare
@@ -52,7 +51,7 @@ ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae
 vulnus haerentia iuste et exercebat, sui et.
 
 Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit
-sequitur. Vel **mitis temploque** vocatus, inque alis, *oculos nomen* non silvis
+sequitur. Vel **mitis temploque** vocatus, inque alis, _oculos nomen_ non silvis
 corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti
 flumina mortis facto sic: undique a alios vincula sunt iactata abdita!
 Suspenderat ego fuit tendit: luna, ante urbem Propoetides **parte**.

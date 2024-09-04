@@ -1,8 +1,6 @@
 +++
 title = "Quick Start"
 description = "One page summary of how to start a new AdiDoks project."
-date = 2021-05-01T08:20:00+00:00
-updated = 2021-05-01T08:20:00+00:00
 draft = false
 weight = 20
 sort_by = "weight"
@@ -16,7 +14,9 @@ top = false
 
 ## Requirements
 
-Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.15.0.
+Before using the theme, you need to install the
+[Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥
+0.15.0.
 
 ## Run the Theme Directly
 
@@ -90,5 +90,5 @@ Just run `zola serve` in the root path of the project:
 zola serve
 ```
 
-AdiDoks will start the Zola development web server accessible by default at 
+AdiDoks will start the Zola development web server accessible by default at
 `http://127.0.0.1:1111`. Saved changes will live reload in the browser.

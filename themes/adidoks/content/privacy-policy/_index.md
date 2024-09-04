@@ -1,15 +1,13 @@
 +++
 title = "Privacy Policy"
 description = "We do not use cookies and we do not collect any personal data."
-date = 2021-05-01T08:00:00+00:00
-updated = 2020-05-01T08:00:00+00:00
 draft = false
 
 [extra]
 class = "page single"
 +++
 
-__TLDR__: We do not use cookies and we do not collect any personal data.
+**TLDR**: We do not use cookies and we do not collect any personal data.
 
 ## Website visitors
 

@@ -1,8 +1,6 @@
 +++
 title = "Bergen Realistforening"
 description = "Bergen Realistforening"
-date = 2023-03-21T15:51:00+00:00
-updated = 2023-03-21T15:51:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 5
@@ -32,8 +30,8 @@ har sluttet å virke. En naturlig aksjonsliste blir da:
 
 Sist Oppdatert: 21.03.2023
 
-| Domenenavn             | Kort forklaring            |
-| ---------------------- | -------------------------- |
+| Domenenavn                     | Kort forklaring            |
+| ------------------------------ | -------------------------- |
 | [rf.uib.no](https://rf.uib.no) | Hovedside, vertet på Pluto |
 
 ## Kontaktinformasjon

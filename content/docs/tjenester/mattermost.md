@@ -1,8 +1,6 @@
 +++
 title = "Mattermost"
 description = "Intern kommunikasjon"
-date = 2022-03-12
-updated = 2022-03-12
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
@@ -103,7 +101,8 @@ sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.ng
 
 ### Lage nye sertifikat configs
 
-Skulle stegene over ikke fungere er det også mulig å lage nye sertifikat konfigurasjonsfiler med følgende kommando
+Skulle stegene over ikke fungere er det også mulig å lage nye sertifikat
+konfigurasjonsfiler med følgende kommando
 
 _For fremtidige generasjoner: for å kunne issue et nytt sertifikat kreves det at
 nginx_mattermost containeren er stoppet, dette er fordi certbot container

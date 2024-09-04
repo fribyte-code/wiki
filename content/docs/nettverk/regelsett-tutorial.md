@@ -1,8 +1,6 @@
 +++
 title = "Fremgangsmåte for å skrive pf regelsett"
 description = "En forklaring på hvordan man skriver et regelsett i pf"
-date = 2022-03-06T18:52:00+00:00
-updated = 2022-03-06T18:52:00+00:00
 template = "docs/page.html"
 sort_by = "weight"
 weight = 1
