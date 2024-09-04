@@ -27,16 +27,19 @@ For å lage en ny epost-adresse for det nye medlemmet.
 2. Gå til "Email Domains" -> "friByte.no"
 3. Under "All Addresses" eller "Mailboxes", trykk på "New Mailbox"
 4. Fyll inn medlemmets info
-5. Profitt
+5. Create Mailbox
+6. Profitt
 
 ### Legge nytt medlem til i mailing listene:
 
 1. Logg inn med admin-bruker
-2. Gå til "Email Domains" -> "aktive@friByte.no"
-3. Gå til Mailboxes
-4. Velg fribyte@fribyte.no
-5. Under delegation: Legg til ny epost addresse i tekstfeltet for Local
+2. Gå til Mailboxes
+3. Gå til "List" -> "aktive@friByte.no"
+4. Under Overview -> Delegation
+5. Legg til ny epost addresse i tekstfeltet for Local
    Recipients
+6. Save Changes
+7. Even more Profitt
 
 ## Mattermost
 
