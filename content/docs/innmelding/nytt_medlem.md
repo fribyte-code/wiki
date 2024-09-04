@@ -25,7 +25,7 @@ For å lage en ny epost-adresse for det nye medlemmet.
 2. Gå til "Email Domains" -> "friByte.no"
 3. Under "All Addresses" eller "Mailboxes", trykk på "New Mailbox"
 4. Fyll inn medlemmets info
-5. Create Mailbox
+5. Trykk "Create Mailbox"
 6. Profitt
 
 ### Legge nytt medlem til i mailing listene:
@@ -36,8 +36,8 @@ For å lage en ny epost-adresse for det nye medlemmet.
 4. Under Overview -> Delegation
 5. Legg til ny epost addresse i tekstfeltet for Local
    Recipients
-6. Save Changes
-7. Even more Profitt
+6. Lagre endringer
+7. Enda mer profitt
 
 ## Mattermost
 
@@ -68,15 +68,15 @@ Man får tilgang til økosystemet ved å SSH'e seg til et spesifikt domene.
 `ssh-keygen -t ed25519 -C "your_email@example.com"` for å generere en SSH-nøkkel. Få mer info:
    [Github docs, how to generate a new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-2. Dette er noe et aktivt medlem må gjøre.
-   
-3. Hente .pub key fra det nye medlemmet, skriv ut public key med `cat .\publickey.pub` og sende det til deg i friByte chat. 
+2. Hente .pub key fra det nye medlemmet, skriv ut public key med `cat .ssh/*.pub` og sende det til aktivt medlem i friByte chat. 
+
+3. Neste steg må et aktivt medlem i friByte som har tilgang til Andeby gjøre
 
 4. Koble til bestemor via `ssh root@andeby.fribyte.no`. Dette er gatewayen til resten av våre kjære maskiner. 
 
 5. Åpne authorized_keys i din favoritt kode-redaktør, nano for eksempel: `nano ~/.ssh/authorized_keys`. 
 
-6. Skriv navnet til det nye medlemmet og paste inn ssh key. 
+6. Skriv navnet til det nye medlemmet og lim inn ssh-nøkkelen. 
 
 7. Commence hostile takeover!
 
