@@ -85,10 +85,10 @@ draft = false
 | 158.37.6.53 | 2001:700:201:1::7018     | svartepetter.ss.uib.no         | eth0         | DNS tjener (dunstus) (slave)            |
 | 158.37.6.54 |                          |                                |              | (ledig)                                 |
 | 158.37.6.55 |                          |                                |              | (ledig)                                 |
-| 158.37.6.56 |                          |                                |              | (ledig)                                 |
-| 158.37.6.57 |                          |                                |              | (ledig)                                 |
-| 158.37.6.58 |                          |                                |              | RESERVED                                |
-| 158.37.6.59 |                          |                                |              | RESERVED                                |
+| 158.37.6.56 |                          | WAN Firewall 1                 |              | RESERVED                                |
+| 158.37.6.57 |                          | netti.vpn.fribyte.no           |              | Netti proxmox host (Network cluster)    |
+| 158.37.6.58 |                          | letti.vpn.fribyte.no           |              | Letti proxmox host (Network cluster)    |
+| 158.37.6.59 |                          | WAN Firewall 2                 |              | RESERVED                                |
 | 158.37.6.63 |                          | Broadcast                      | RESERVED     |                                         |
 | 158.37.6.64 |                          |                                |              | (ledig)                                 |
 | 158.37.6.65 |                          | dole                           |              | Ekstern ip                              |
