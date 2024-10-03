@@ -7,11 +7,28 @@ weight = 1
 draft = false
 +++
 
-# Hva?
+# What?
 
-Dette er et proxmox cluster bestående av Netti og Letti
+This network consists of the two physical machines Netti and Letti.
 
-Disse skal KUN brukes til hosting av nettverkstjenester (DNS, Proxy, Headscale,
-Opnsense)
+These are to be used ONLY for vital networking services (DNS, Firewall, Proxies,
+VPN)
 
-# Opnsese opsett
+If you want to host a general service, please put it on the regular proxmox
+cluster
+
+# Opnsese setup
+
+Each of the hosts have a vm fw-{1-2}. These are the new firewalls we will be
+running.
+
+These run Opnsense (freeBSD) as a service and are currently accessible through
+tailscale with fw-1.vpn.fribyte.no and fw-2.vpn.fribyte.no
+
+The way these are set up is they have 4 network ports passed through to them
+using PCI-passthrough in Proxmox.
+
+## Wiring
+
+These VMs are set up behind our current firewall (dole, ole), this is a
+temporary setup for configuration.
