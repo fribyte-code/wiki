@@ -23,7 +23,7 @@ draft = false
   2606:4700:4700::1001
 
 | IPv4        | IPv6                     | Navn                           | Interface    | Kommentar                               |
-| ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- |
+| ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- | --- |
 |             | 2001:700:201:1:5001::2   | Petter.fribyte.no              |              | Kubernetes server node                  |
 |             | 2001:700:201:1:5001::1   | Raptus.fribyte.no              |              | Kubernetes server node                  |
 |             | 2001:700:201:1:5001::3   | Hutre.fribyte.no               |              | Kubernetes server node                  |
@@ -83,9 +83,9 @@ draft = false
 | 158.37.6.51 | 2001:700:201:1::7000     | anton.ss.uib.no                | eth0         | gammel LDAP                             |
 | 158.37.6.52 | 2001:700:201:1::7010     | kladden.ss.uib.no              | eth0         | DNS tjener (solveig) (master)           |
 | 158.37.6.53 | 2001:700:201:1::7018     | svartepetter.ss.uib.no         | eth0         | DNS tjener (dunstus) (slave)            |
-| 158.37.6.54 |                          |                                |              | (ledig)                                 |
-| 158.37.6.55 |                          |                                |              | (ledig)                                 |
-| 158.37.6.56 |                          | WAN Firewall 1                 |              | RESERVED                                |
+| 158.37.6.54 |                          | NEW FIREWALL CARP              |              | RESERVED                                |
+| 158.37.6.55 |                          | WAN Firewall 1                 |              | RESERVED                                |
+| 158.37.6.56 |                          | HEADSCALE                      |              |                                         |     |
 | 158.37.6.57 |                          | netti.vpn.fribyte.no           |              | Netti proxmox host (Network cluster)    |
 | 158.37.6.58 |                          | letti.vpn.fribyte.no           |              | Letti proxmox host (Network cluster)    |
 | 158.37.6.59 |                          | WAN Firewall 2                 |              | RESERVED                                |
