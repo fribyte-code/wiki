@@ -23,19 +23,19 @@ hovednettsiden er deployed med docker.
 
 ### Relevante domener
 
-Sist Oppdatert: 21.02.2024
+Sist Oppdatert: 22.10.2024
 
 | Domenenavn                                                   | Kort forklaring  |
 | ------------------------------------------------------------ | ---------------- |
-| [www.rootlinjeforening.no](https://www.rootlinjeforening.no) | NextJS-hovedside |
+| [rootlinjeforening.no](https://rootlinjeforening.no)         | NextJS-hovedside |
 | [\*.rootlinjeforening.no](#)                                 | Mulige nettsider |
 
 ### Kontaktinformasjon
 
-Sist Oppdatert: 21.02.2024
+Sist Oppdatert: 22.10.2024
 
 | Stilling     | Navn              | Nummer | E-adresse          |
 | ------------ | ----------------- | ------ | ------------------ |
 | Styreleder   | Nick James Hipol  | I/T    | 676663@stud.hvl.no |
-| Nestleder    | Kristina Dahlgren | I/T    | 142943@stud.hvl.no |
+| Nestleder    | Adam Remøy        | I/T    | 184915@stud.hvl.no |
 | IT-ansvarlig | Simen Strømsnes   | I/T    | 676624@stud.hvl.no |
