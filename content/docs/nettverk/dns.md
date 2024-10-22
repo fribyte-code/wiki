@@ -192,10 +192,7 @@ $TTL 900
         24h     IN      NS      ns.hyp.net.
 ```
 
-**Zonefile** (/var/cache/bind/primary/<domene>.uib.no) bør se ca slik ut for
-.uib.no:
-
-Se [https://en.wikipedia.org/wiki/Zone_file wikipedia] for hjelp.
+Se [https://en.wikipedia.org/wiki/Zone_file wikipedia] for hjelp med sonefiler.
 
 **named.conf.local** bør se ca sånn ut på NS1:
 
@@ -221,6 +218,8 @@ zone "fribyte.no" {
         inline-signing yes;
 };
 ```
+
+> Husk å kjøre `rndc reload` for å registrere nye configs.
 
 ### Bli kvitt .jnl filer
 
