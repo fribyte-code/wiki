@@ -83,10 +83,6 @@ Steg:
 3. Kjør følgende kommandoer
 
 ```sh
-sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml down
-```
-
-```sh
 sudo docker run --rm --name certbot \
     --network mattermost \
     -v "/home/fribyte/docker/certs/etc/letsencrypt:/etc/letsencrypt" \
@@ -94,6 +90,30 @@ sudo docker run --rm --name certbot \
     -v shared-webroot:/usr/share/nginx/html \
     certbot/certbot renew --webroot-path /usr/share/nginx/html
 ```
+
+```sh
+sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml restart
+```
+
+## Alternative LetsEncrypt renewal process
+
+First we need to stop the mattermost container as we need to take over port 80
+
+```sh
+sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml down
+```
+
+Then run certbot container in standalone mode:
+
+```sh
+sudo docker run --rm --name certbot \
+   -v "/home/fribyte/docker/certs/etc/letsencrypt:/etc/letsencrypt" \
+   -v "/home/fribyte/docker/certs/lib/letsencrypt:/var/lib/letsencrypt" \
+   -v shared-webroot:/usr/share/nginx/html -p 80:80 \
+   certbot/certbot certonly --standalone -d chat.fribyte.no --agree-tos -m renew@fribyte.no
+```
+
+Then restart mattermost:
 
 ```sh
 sudo docker-compose -f ./docker/docker-compose.yml -f ./docker/docker-compose.nginx.yml up -d
