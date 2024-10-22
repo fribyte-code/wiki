@@ -241,6 +241,7 @@ friByte har mange domener. Disse ligger i `/var/bind/master` på NS1.
 | ss.uib.no                                | Gamle studentsenteret - brukes på våre maskiner - fases ut |
 | bstv.no                                  | [Bergen Student TV](./kunder/bstv)                         |
 | srib.no                                  | [Srib](./kunder/studentradioen)                            |
+| rootlinjeforening.no                     | [Root Linjeforening](./kunder/root)                        |
 
 ### Lokale soner
 
