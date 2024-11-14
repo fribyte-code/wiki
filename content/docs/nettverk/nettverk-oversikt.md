@@ -26,12 +26,6 @@ draft = false
 
 | IPv4        | IPv6                     | Navn                           | Interface    | Kommentar                               |
 | ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- |
-|             | 2001:700:201:1:5001::2   | Petter.fribyte.no              |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::1   | Raptus.fribyte.no              |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::3   | Hutre.fribyte.no               |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::101 | lille-hjelper-1.fribyte.no     |              | Kubernetes agent node                   |
-|             | 2001:700:201:1:5001::102 | lille-hjelper-2.fribyte.no     |              | Kubernetes agent node                   |
-|             | 2001:700:201:1:5001::103 | lille-hjelper-3.fribyte.no     |              | Kubernetes agent node                   |
 | 158.37.6.1  |                          | guffen                         |              | guffen self hosted actions runner       |
 | 158.37.6.2  |                          |                                |              | (ledig)                                 |
 | 158.37.6.3  |                          | workshop-website (temporarily) |              | Midlertidig brukt til website workshop  |
@@ -88,8 +82,8 @@ draft = false
 | 158.37.6.54 |                          | NEW FIREWALL CARP              |              | RESERVED                                |
 | 158.37.6.55 |                          | WAN Firewall 1                 |              | RESERVED                                |
 | 158.37.6.56 |                          | HEADSCALE                      |              |                                         |
-| 158.37.6.57 |                          | netti.vpn.fribyte.no           |              | Netti proxmox host (Network cluster)    |
-| 158.37.6.58 |                          | letti.vpn.fribyte.no           |              | Letti proxmox host (Network cluster)    |
+| 158.37.6.57 |                          |                                |              |                                         |
+| 158.37.6.58 |                          |                                |              |                                         |
 | 158.37.6.59 |                          | WAN Firewall 2                 |              | RESERVED                                |
 | 158.37.6.63 |                          | Broadcast                      | RESERVED     |                                         |
 | 158.37.6.64 |                          |                                |              | (ledig)                                 |
