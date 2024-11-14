@@ -93,6 +93,8 @@ draft = false
 
 # New network (OpnSense NAT)
 
+This uses the subnet `10.0.0.0/24` for local adresses
+
 | IPV4      | IPV6 | Name            | Interface              | Comment              |
 | --------- | ---- | --------------- | ---------------------- | -------------------- |
 | 10.0.0.1  |      | fw-1 (netti)    | bge0                   | LAN interface fw-1   |
