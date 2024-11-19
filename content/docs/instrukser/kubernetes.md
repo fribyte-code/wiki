@@ -28,7 +28,7 @@ relevant for arbeidsliv.
 
 ## Oppsett av kluster
 
-Installerte k3sup på Pluto som har tilgang til NAT netverket: https://github.com/alexellis/k3sup?tab=readme-ov-file#download-k3sup-tldr
+[Installere k3sup](https://github.com/alexellis/k3sup?tab=readme-ov-file#download-k3sup-tldr) på Pluto, som har tilgang til NAT nettverket.
 
 Installer master og agent nodene med k3sup på Pluto:
 
