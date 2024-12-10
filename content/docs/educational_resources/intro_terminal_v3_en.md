@@ -34,7 +34,7 @@ There's a series of "special directories" that can be used in paths:
 - `~` : it indicates your home directory (`/home/my_usr`). It's the directory in which you start when you open a terminal. The paths that use it are a bit different from relative and absolute paths until now. It is relative to the user (if you are logged in into another account it won't work) but inside the user directory, it could be said to be absolute, as it doesn't matter in which directory you are (`~/Desktop/dir1` works even if you are inside `/home/my_usr/Documents/dir2`)
 
 For more information about the structure of the Linux file system you can read
-https://linuxhandbook.com/linux-directory-structure/
+<https://linuxhandbook.com/linux-directory-structure/>
 
 ## ls [LiSt]
 Lists the files (and subdirectories) in a directory (same as looking at them in the graphical file manager).
@@ -148,7 +148,7 @@ For this command as well you can use the special path specifiers.
 ## rm [ReMove]
 Deletes files/directories.
 
-There shouldn't be any problem with using it if you are careful with what you do (aka, don't just paste the first command you find on the Internet without knowing what it does) but, if you feel more comfortable, you can always create a command that moves the files to a Bin directory instead, and then you can use rm inside it (see aliases in [Other interesting concepts to learn about](##Other interesting concepts to learn about)).
+There shouldn't be any problem with using it if you are careful with what you do (aka, don't just paste the first command you find on the Internet without knowing what it does) but, if you feel more comfortable, you can always create a command that moves the files to a Bin directory instead, and then you can use rm inside it (see aliases in [Other interesting concepts to learn about](#other-interesting-concepts-to-learn-about)).
 
 - `rm <file>`: removes the file
 - `rmdir <directory>`: removes a directory but **only** if it's empty (useful if you want to make sure all directories you are erasing have nothing left inside).
@@ -203,7 +203,7 @@ The second and more practical reason is, as it's executed as your user and not a
     - `z Doc`: could jump to `~/Documents`
     - `z screen `: could jump to `~/Desktop/pictures/screenshots`
     - `z shots `: could also jump to `~/Desktop/pictures/screenshots`
-- `grep`: allows to search inside of files or in the output of a command (for example, if ls has a big output and you want to see if there is some pdf, you can use `grep` to search the ".pdf" string inside the output of `ls`). It's recommended to learn about redirections beforehand, since they will be specially useful here (in [Other interesting concepts to learn about](##Other interesting concepts to learn about))
+- `grep`: allows to search inside of files or in the output of a command (for example, if ls has a big output and you want to see if there is some pdf, you can use `grep` to search the ".pdf" string inside the output of `ls`). It's recommended to learn about redirections beforehand, since they will be specially useful here (in [Other interesting concepts to learn about](#other-interesting-concepts-to-learn-about))
     - `grep <string> <file>`: prints all lines `file` that contain `string`
     - `grep -i <string> <file>`: the search is case insensitive
 - `xkill`: if a window freezes and stops responding, you can execute `xkill` inside a terminal and click with the mouse on the offending window to kill it.
@@ -269,26 +269,26 @@ They aren't installed by default and usually have a bunch of parameters and opti
 - `xpenguins` and `xsnow`: might not work everywhere (even inside X11) but should make a bunch of penguins appear and start moving through your screen (for the first one) and snow fall from the top of your screen and on top of your windows (for the second one).
 - `lolcat`: prints multicoloured text. It's usually used with command redirection (e.g.: `ls | lolcat`).
 - `neofetch`/`fastfetch` (and others): print an ascii drawing of your distro's logo (this can be changed) and your device specs (distro, desktop environment, RAM, CPU...). Neofetch is he most typical one but it has been discontinued and fastfetch is faster. Both can be personalized but neofetch has many pre-designed themes.
-    - NeoCat (neofetch themes): https://github.com/m3tozz/NeoCat
-    - Neofetch-themes: https://github.com/Chick2D/neofetch-themes/tree/main
+    - NeoCat (neofetch themes): <https://github.com/m3tozz/NeoCat>
+    - Neofetch-themes: <https://github.com/Chick2D/neofetch-themes/tree/main>
 
 
 ## Other interesting concepts to learn about
 
 - Package manager: the most practical way of installing packages in Linux. Depending on the distro you will use one manager or another but the important thing is to learn the commands to update/upgrade the system and install, remove and search packages.
 - Redirection: allows the concatenation of commands, redirecting the output of one to the input of the next one or to a file.
-  https://www.freecodecamp.org/news/linux-terminal-piping-and-redirection-guide/
+  <https://www.freecodecamp.org/news/linux-terminal-piping-and-redirection-guide/>
 - Alias: you can create an alias for a command to give it a different name (so you can write `potato` instead of `sudo`) or to simplify certain combinations of parameters that you use a lot (`ll` instead of `ls -lh`).
-  https://www.freecodecamp.org/news/how-to-add-aliases-to-terminal-commands/
+  <https://www.freecodecamp.org/news/how-to-add-aliases-to-terminal-commands/>
   (in most distros you don't need to touch the `.bashrc`. If you create a `.bash_aliases` file in your home directory it detects it automatically. This allows you to have an alias-specific file, cleaner and more concise).
 - Automation: terminal scripts allow to automate many things and cron is also very useful for this, allowing to execute commands at certain hours/days automatically.
     - Bash Scripting Tutorial:
-      https://ryanstutorials.net/bash-scripting-tutorial/
+      <https://ryanstutorials.net/bash-scripting-tutorial/>
     - Understanding Crontab in Linux with Examples:
-      https://linuxhandbook.com/crontab/
+      <https://linuxhandbook.com/crontab/>
 - zsh: bash is the default shell for many distros but there are others. One of the better known is zsh, due to its ample functionality and configurability, like syntax highlighting in the command line. It's usually installed alongside ohmyzsh, which allows to easily configure it and install extensions.
-    - ohmyzsh web page: https://ohmyz.sh/
-    - ohmyzsh GitHub: https://github.com/ohmyzsh/ohmyzsh
+    - ohmyzsh web page: <https://ohmyz.sh/>
+    - ohmyzsh GitHub: <https://github.com/ohmyzsh/ohmyzsh>
 - `hollywood`: some Hollywood-hacking magic (just keep pressing Ctrl+C to exit it)
 
 ## Other resources
@@ -297,50 +297,50 @@ Some useful resources to learn how to use the terminal and Linux in general. I h
 #### Tools/documentation:
 
 - Explain Shell: you write a command and it explains what each part does (not perfect but it can help)
-  https://explainshell.com/
+  <https://explainshell.com/>
 
 #### Courses
 
 - Linux Journey: web page to learn the Linux basics
-  https://linuxjourney.com/
+  <https://linuxjourney.com/>
 - Beginner's Guide to the Bash Terminal (video):
-  https://www.youtube.com/watch?v=oxuRxtrO2Ag
+  <https://www.youtube.com/watch?v=oxuRxtrO2Ag>
 - The Linux Command Line (book): https://www.linuxcommand.org/
 - Linux Terminal - Getting Started! (video series):
-  https://www.youtube.com/watch?v=b5NmtmNwMgU&list=PLW5y1tjAOzI2ZYTlMdGzCV8AJuoqW5lKB
+  <https://www.youtube.com/watch?v=b5NmtmNwMgU&list=PLW5y1tjAOzI2ZYTlMdGzCV8AJuoqW5lKB>
 - Text adventure game using the terminal commands (video game):
-  https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html
+  <https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html>
 - Learning Terminal in Linux (video series):
-  https://www.youtube.com/playlist?list=PLc7fktTRMBozYfi4zlDeH0IdLdGImeOnO
+  <https://www.youtube.com/playlist?list=PLc7fktTRMBozYfi4zlDeH0IdLdGImeOnO>
 - Linux Tutorial:
-  https://ryanstutorials.net/linuxtutorial/
+  <https://ryanstutorials.net/linuxtutorial/>
 - The Unix Shell:
-  https://swcarpentry.github.io/shell-novice/
+  <https://swcarpentry.github.io/shell-novice/>
 
 #### Articles
 
 - Command Line for Beginners - How to Use the Terminal Like a Pro:
-  https://www.freecodecamp.org/news/command-line-for-beginners/
+  <https://www.freecodecamp.org/news/command-line-for-beginners/>
 - How to Type Less and Work Faster in the Linux Terminal:
-  https://www.howtogeek.com/815219/how-to-work-faster-in-linux-terminal/
+  <https://www.howtogeek.com/815219/how-to-work-faster-in-linux-terminal/>
 
 #### Interesting blogs
 
 - ItsFOSS: News and tutorials about the free software world in general:
-  https://itsfoss.com/
+  <https://itsfoss.com/>
 - Linux Handbook: Linux courses and tutorials:
-  https://linuxhandbook.com/
+  <https://linuxhandbook.com/>
 - FreeCodeCamp: articles and courses about computers science in general:
-  https://www.freecodecamp.org/
+  <https://www.freecodecamp.org/>
 - LinuxOPsys: linux tutorials and tips:
-  https://linuxopsys.com/
+  <https://linuxopsys.com/>
 
 #### YouTube channels
 
 - Learn Linux TV:
-  https://www.youtube.com/@LearnLinuxTV/videos
+  <https://www.youtube.com/@LearnLinuxTV/videos>
 - Veronica Explains:
-  https://www.youtube.com/@VeronicaExplains/videos
+  <https://www.youtube.com/@VeronicaExplains/videos>
 - The Linux Experiment (Linux news):
-  https://www.youtube.com/@TheLinuxEXP/videos
+  <https://www.youtube.com/@TheLinuxEXP/videos>
 
