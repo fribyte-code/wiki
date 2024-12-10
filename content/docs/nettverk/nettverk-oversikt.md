@@ -7,6 +7,8 @@ weight = 1
 draft = false
 +++
 
+# Old network (No Nat)
+
 ## IPv4
 
 - ip: 158.37.6.0/26
@@ -24,12 +26,6 @@ draft = false
 
 | IPv4        | IPv6                     | Navn                           | Interface    | Kommentar                               |
 | ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- |
-|             | 2001:700:201:1:5001::2   | Petter.fribyte.no              |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::1   | Raptus.fribyte.no              |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::3   | Hutre.fribyte.no               |              | Kubernetes server node                  |
-|             | 2001:700:201:1:5001::101 | lille-hjelper-1.fribyte.no     |              | Kubernetes agent node                   |
-|             | 2001:700:201:1:5001::102 | lille-hjelper-2.fribyte.no     |              | Kubernetes agent node                   |
-|             | 2001:700:201:1:5001::103 | lille-hjelper-3.fribyte.no     |              | Kubernetes agent node                   |
 | 158.37.6.1  |                          | guffen                         |              | guffen self hosted actions runner       |
 | 158.37.6.2  |                          |                                |              | (ledig)                                 |
 | 158.37.6.3  |                          | workshop-website (temporarily) |              | Midlertidig brukt til website workshop  |
@@ -86,11 +82,35 @@ draft = false
 | 158.37.6.54 |                          | NEW FIREWALL CARP              |              | RESERVED                                |
 | 158.37.6.55 |                          | WAN Firewall 1                 |              | RESERVED                                |
 | 158.37.6.56 |                          | HEADSCALE                      |              |                                         |
-| 158.37.6.57 |                          | netti.vpn.fribyte.no           |              | Netti proxmox host (Network cluster)    |
-| 158.37.6.58 |                          | letti.vpn.fribyte.no           |              | Letti proxmox host (Network cluster)    |
+| 158.37.6.57 |                          |                                |              |                                         |
+| 158.37.6.58 |                          |                                |              |                                         |
 | 158.37.6.59 |                          | WAN Firewall 2                 |              | RESERVED                                |
 | 158.37.6.63 |                          | Broadcast                      | RESERVED     |                                         |
 | 158.37.6.64 |                          |                                |              | (ledig)                                 |
 | 158.37.6.65 |                          | dole                           |              | Ekstern ip                              |
 | 158.37.6.66 |                          | dole                           |              | Ekstern ip                              |
 | 158.37.6.67 |                          | doffen                         |              | Ekstern ip                              |
+
+# New network (OpnSense NAT)
+
+This uses the subnet `10.0.0.0/24` for local adresses
+
+| IPV4      | IPV6 | Name            | Interface              | Comment              |
+| --------- | ---- | --------------- | ---------------------- | -------------------- |
+| 10.0.0.1  |      | fw-1 (netti)    | bge0                   | LAN interface fw-1   |
+| 10.0.0.2  |      | fw-2            | bge0                   | Lan interface fw-2   |
+| 10.0.0.11 |      | Gateway NAT     |                        | Opnsense LAN gateway |
+| 10.0.0.20 |      | Letti           | enp130s0f0             | Letti Proxmox Host   |
+| 10.0.0.21 |      | Netti           | enp132s0f0             | Netti Proxmox Host   |
+| 10.0.0.25 |      | Pluto           | enp7s0f1               | Netti Proxmox Host   |
+| 10.0.0.26 |      | Fergus          | enp7s0f1               | Netti Proxmox Host   |
+| 10.0.0.27 |      | Skaftetrynet    | eno1                   | Netti Proxmox Host   |
+| 10.0.0.70 |      | Raptus          | vmbrNAT (pluto)        | k3s Master           |
+| 10.0.0.71 |      | Petter          | vmbrNAT (Fergus)       | k3s Master           |
+| 10.0.0.72 |      | Hutre           | vmbrNAT (Skaftetrynet) | k3s Master           |
+| 10.0.0.80 |      | Lille-Hjelper-1 | vmbrNAT (Pluto)        | k3s Slave            |
+| 10.0.0.81 |      | Lille-Hjelper-2 | vmbrNAT (Fergus)       | k3s Slave            |
+| 10.0.0.82 |      | Lille-Hjelper-3 | vmbrNAT (Skaftetrynet) | k3s Slave            |
+|           |      |                 |                        |                      |
+|           |      |                 |                        |                      |
+|           |      |                 |                        |                      |
