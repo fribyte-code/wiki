@@ -16,16 +16,19 @@
 In Linux the file system has a tree structure and all files and directories are under the root directory, represented as `/` (the root of the tree). For example, the user's home directory is in the path `/home`, which means inside the directory "home" which is inside the directory "/" (root).
 
 There are two types of paths, absolute and relative.
+
 - Absolute paths always start at root and indicate how to reach a file or directory from there. They work independently of where you are in the file system at the moment. When a path starts with `/` it's **always** absolute and the system will start at the root of the file tree.
 - Relative paths depend on the directory in which you are located in that moment, so they can't be used from any place. The system follows the "directions" of the path starting at the directory you are currently on.
   
 Example:
+
 - `/home/my_usr/Desktop/dir1/file.txt`
 - `dir1/file.txt`
 
 Both paths go to the same file, but for the second example you have to be located in the Desktop directory for it to work and it doesn't begin with `/` because its relative, and only absolute paths (like the first one) begin with `/`. It's advisable to use absolute paths for scripts so that they can be executed from any directory without giving error.
 
 There's a series of "special directories" that can be used in paths:
+
 - `..` : it indicates the previous/parent directory. If you move to `..` from `Desktop/dir`, you will end up in `Desktop`.
 - `.` : it indicates your current directory. It's useful when you want to copy a file to where you are (copy file to `.`)
 - `~` : it indicates your home directory (`/home/my_usr`). It's the directory in which you start when you open a terminal. The paths that use it are a bit different from relative and absolute paths until now. It is relative to the user (if you are logged in into another account it won't work) but inside the user directory, it could be said to be absolute, as it doesn't matter in which directory you are (`~/Desktop/dir1` works even if you are inside `/home/my_usr/Documents/dir2`)
@@ -37,6 +40,7 @@ https://linuxhandbook.com/linux-directory-structure/
 Lists the files (and subdirectories) in a directory (same as looking at them in the graphical file manager).
 
 The contents of a directory are printed in different colours, which normally are:
+
 - **White:** files
 - **Bold blue:** directories (folders)
 - **Bold green:** executable files (if it's not green it doesn't necessarily mean that file is not meant to be executed, it just means you don't have the permissions to do it)
@@ -79,6 +83,7 @@ Creates a directory.
 
 ## cat
 Prints the contents of a text file to the terminal.
+
 - `cat <file>`
 - `cat -n <file>`: prints the file with numbered lines
 
@@ -95,18 +100,21 @@ Moves/renames files and directories.
 
 #### Moving
 You specify the file (or files) you want to move and the destination (which has to be common for all files).
+
 - `mv <file/dir> <destination>`
 - `mv test.txt ib`: moves the file `test.txt` to the directory `ib`
 - `mv dir ib`: moves the directory `dir` to the directory `ib`
 - `mv test.txt dir ib`: moves file `test.txt` and directory `dir` to `ib`
 
 You can use the path modifiers:
+
 - `mv file ..`: moves the file to the parent directory
 
 **Warning: If the destination doesn't exists and there is only one file/directory to move, it will rename it (to the destination name). If there is more than one file/directory to move, it will just give an error.**
 
 #### Renaming
 You specify the file you want to rename and the new name.
+
 - `mv <file/dir> <new_name>`
 - `mv fle.txt file.txt`: renames file `fle.txt` to `file.txt`
 - `mv dir dir1`: renames directory `dir` to `dir1`
@@ -116,6 +124,7 @@ You specify the file you want to rename and the new name.
 
 #### Combining both
 You can combine the move and rename operations:
+
 - `mv dir/file file1`: moves file to the current directory (`./file1`) and renames it to `file1`
 - `mv file dir/file1`: moves `file` to the directory `dir` and renames it as `file1`
 - `mv dir/dir1 dir2`: moves `dir1` to the current directory and renames it as `dir2`
@@ -132,6 +141,7 @@ Copies files/directories (can automatically rename the copy)
 - If you want to copy a directory you need to use the `-r` (recursive) flag so that it recursively copies the contents of the directory as well (if you forget, it simply gives an error and reminds you to do it).
 
 For this command as well you can use the special path specifiers.
+
 - `cp dir/test.txt .`: copies `test.txt` from the `dir` to the current directory
 - `cp file ..`: copies the file to the parent directory
 
@@ -154,6 +164,7 @@ There's a cheat sheet in the base of the editor with other useful keybindings.
 
 ## VS Code
 If you use VS Code as you editor, you can launch it form the terminal (which is useful when you are already in the directory you want to work on).
+
 - `code`: opens VS Code
 - `code <file>`: opens the file in VS Code
 - `code <dir>`: opens the directory in VS Code (if you are currently in it you can use `code .`)
@@ -181,6 +192,7 @@ The first reason to use `sudoedit` is that it's safer. The command makes a copy 
 The second and more practical reason is, as it's executed as your user and not as root, the command uses your editor configuration. Again, maybe if you use nano it doesn't make much of a difference, but if you have a more configurable or extensible editor you can use your configuration when editing the system files instead of having to stick with the root config (which will probably be the default one).
 
 ## Other commands
+
 - `clear`: clears the terminal (erases everything written and brings the cursor back to the top)
 - `exit`: exists the terminal
 - `find <dir> -name <name>`: finds every file/directory inside `dir` that has the name `name`. It has to be the exact name (unless you use wildcards)
@@ -197,6 +209,7 @@ The second and more practical reason is, as it's executed as your user and not a
 - `xkill`: if a window freezes and stops responding, you can execute `xkill` inside a terminal and click with the mouse on the offending window to kill it.
 
 ## Other concepts
+
 - To copy and paste, highlight the text to copy and press the mouse wheel to paste it. You can also use Ctrl+Shift+C and Ctrl+Shift+V.
 - To interrupt a command : Ctrl+C
 - Up arrow to see previous commands (goes through the command history). It allows you to execute them again or edit them.
@@ -215,15 +228,18 @@ In Linux, `*` represents the wildcard. It tells the terminal that it can substit
 Another example would be if you have the files "ing.pdf", "ing.txt", "programming.txt" and "editing" and you just want to move the first two. For this you would use `ing*`, indicating that the file has to start with "ing" and whatever goes after doesn't matter.
 
 This is very useful when you want to move al pdf files to a directory, for example:
+
 - `mv *.pdf pdf-dir/` : moves every file that ends in ".pdf"
 (We have to remember that in Linux you don't need to have the appropriate extension in every file, so this would move all files with a name ending in pdf, not necessarily all pdf files. But if the conventions are followed, which normally are, it should be the same in the end)
 
 Correspondingly, if you have a bunch of files starting in the same way and want to erase them all, you can write the start string and add `*`.
+
 - `rm erasable*`: will erase "erasable_edited.pdf", "erasable_original.pdf", "erasable.txt"...
 
 **BE VERY CAREFUL WHEN USING WILDCARDS, SPECIALLY WITH RM.** If written on its own (`rm *`) it will erase everything in the directory (you are telling the system to erase everything with any name). This can be very useful but also very dangerous.
 
 ## Help
+
 - `apropos <string>`: searches for `string` in the list of installed commands (has the command name and a brief description).
     - E.g.: `apropos editor`
         > ... \
@@ -240,6 +256,7 @@ My recommendation is: when you need to find a new command use `apropos` or the I
 
 ## Useless comands everyone should know
 They aren't installed by default and usually have a bunch of parameters and options you can learn about in the help pages (`man`, `tldr`...).
+
 - `cowsay <text>`: prints a cow with a speech bubble that has `text` inside. With the parameter `-f` you can change the ascii drawing (my favourite is the stegosaurus with a hat)
 - `sl`: animation of a train crossing your terminal. You can't stop it with Ctrl+C (they used "sl" to nag everyone that mistypes `ls` so not being able to stop it is on purpose). It has a couple of options, like people screaming for help or making the train fly.
 - `cmatrix`: characters falling through your terminal screen
@@ -257,6 +274,7 @@ They aren't installed by default and usually have a bunch of parameters and opti
 
 
 ## Other interesting concepts to learn about
+
 - Package manager: the most practical way of installing packages in Linux. Depending on the distro you will use one manager or another but the important thing is to learn the commands to update/upgrade the system and install, remove and search packages.
 - Redirection: allows the concatenation of commands, redirecting the output of one to the input of the next one or to a file.
   https://www.freecodecamp.org/news/linux-terminal-piping-and-redirection-guide/
@@ -277,10 +295,12 @@ They aren't installed by default and usually have a bunch of parameters and opti
 Some useful resources to learn how to use the terminal and Linux in general. I haven't looked at them all and they aren't in any particular order.
 
 #### Tools/documentation:
+
 - Explain Shell: you write a command and it explains what each part does (not perfect but it can help)
   https://explainshell.com/
 
 #### Courses
+
 - Linux Journey: web page to learn the Linux basics
   https://linuxjourney.com/
 - Beginner's Guide to the Bash Terminal (video):
@@ -298,12 +318,14 @@ Some useful resources to learn how to use the terminal and Linux in general. I h
   https://swcarpentry.github.io/shell-novice/
 
 #### Articles
+
 - Command Line for Beginners - How to Use the Terminal Like a Pro:
   https://www.freecodecamp.org/news/command-line-for-beginners/
 - How to Type Less and Work Faster in the Linux Terminal:
   https://www.howtogeek.com/815219/how-to-work-faster-in-linux-terminal/
 
 #### Interesting blogs
+
 - ItsFOSS: News and tutorials about the free software world in general:
   https://itsfoss.com/
 - Linux Handbook: Linux courses and tutorials:
@@ -314,6 +336,7 @@ Some useful resources to learn how to use the terminal and Linux in general. I h
   https://linuxopsys.com/
 
 #### YouTube channels
+
 - Learn Linux TV:
   https://www.youtube.com/@LearnLinuxTV/videos
 - Veronica Explains:
