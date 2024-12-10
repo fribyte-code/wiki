@@ -1,4 +1,12 @@
-# Terminal introduction
++++
+title = "Terminal Introduction"
+description = "Tutorial to help you get started with the terminal"
+template = "docs/page.html"
+sort_by = "weight"
+weight = 2
+draft = false
++++
+
 ## Intro
 - To open a terminal in most Linux distributions you can use `Ctrl+Atl+T` (if it doesn't work, you can try with `Atl+Enter`, `Alt+T`, `Ctrl+T` or something like that or just look for it in the app launcher)
 - What is between `<>` has to be substituted and the "<>" are removed.
