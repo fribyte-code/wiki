@@ -20,6 +20,7 @@ before starting. The setup can be found [here](../ha-setup)
    `1000 (VM 1000)` på Fergus (høyreklikk -> clone)
 1. Definer navn, gjerne navn på kunde
 1. Velg en ledig VM-ID
+1. Sett mode til full clone
 1. Sett target storage til `basseng`
 1. Klikk "Clone"
 1. Brukernavn: fribyte
