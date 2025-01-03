@@ -93,12 +93,12 @@ draft = false
 
 # New network (OpnSense NAT)
 
-This uses the subnet `10.0.0.0/24` for local adresses
+This local network uses the subnet `10.0.0.0/24` for 254 total local adresses
 
-| IPV4       | IPV6 | Name            | Interface              | Comment              |
+|IPV4 (1-254)| IPV6 | Name            | Interface              | Comment              |
 | ---------- | ---- | --------------- | ---------------------- | -------------------- |
 | 10.0.0.1   |      | fw-1 (netti)    | bge0                   | LAN interface fw-1   |
-| 10.0.0.2   |      | fw-2            | bge0                   | Lan interface fw-2   |
+| 10.0.0.2   |      | fw-2 (letti)    | bge0                   | Lan interface fw-2   |
 | 10.0.0.11  |      | Gateway NAT     |                        | Opnsense LAN gateway |
 | 10.0.0.20  |      | Letti           | enp130s0f0             | Letti Proxmox Host   |
 | 10.0.0.21  |      | Netti           | enp132s0f0             | Netti Proxmox Host   |
@@ -111,6 +111,6 @@ This uses the subnet `10.0.0.0/24` for local adresses
 | 10.0.0.80  |      | Lille-Hjelper-1 | vmbrNAT (Pluto)        | k3s Slave            |
 | 10.0.0.81  |      | Lille-Hjelper-2 | vmbrNAT (Fergus)       | k3s Slave            |
 | 10.0.0.82  |      | Lille-Hjelper-3 | vmbrNAT (Skaftetrynet) | k3s Slave            |
-| 10.0.0.100 |      | lb-1            |                        |                      |
-| 10.0.0.101 |      | lb-2            |                        |                      |
+| 10.0.0.100 |      | lb-1 (netti)    | vmbrNAT (netti)        | NAT tcp proxy        |
+| 10.0.0.101 |      | lb-2 (letti)    | vmbrNAT (letti)        | NAT tcp proxy        |
 |            |      |                 |                        |                      |
