@@ -95,22 +95,22 @@ draft = false
 
 This uses the subnet `10.0.0.0/24` for local adresses
 
-| IPV4      | IPV6 | Name            | Interface              | Comment              |
-| --------- | ---- | --------------- | ---------------------- | -------------------- |
-| 10.0.0.1  |      | fw-1 (netti)    | bge0                   | LAN interface fw-1   |
-| 10.0.0.2  |      | fw-2            | bge0                   | Lan interface fw-2   |
-| 10.0.0.11 |      | Gateway NAT     |                        | Opnsense LAN gateway |
-| 10.0.0.20 |      | Letti           | enp130s0f0             | Letti Proxmox Host   |
-| 10.0.0.21 |      | Netti           | enp132s0f0             | Netti Proxmox Host   |
-| 10.0.0.25 |      | Pluto           | enp7s0f1               | Netti Proxmox Host   |
-| 10.0.0.26 |      | Fergus          | enp7s0f1               | Netti Proxmox Host   |
-| 10.0.0.27 |      | Skaftetrynet    | eno1                   | Netti Proxmox Host   |
-| 10.0.0.70 |      | Raptus          | vmbrNAT (pluto)        | k3s Master           |
-| 10.0.0.71 |      | Petter          | vmbrNAT (Fergus)       | k3s Master           |
-| 10.0.0.72 |      | Hutre           | vmbrNAT (Skaftetrynet) | k3s Master           |
-| 10.0.0.80 |      | Lille-Hjelper-1 | vmbrNAT (Pluto)        | k3s Slave            |
-| 10.0.0.81 |      | Lille-Hjelper-2 | vmbrNAT (Fergus)       | k3s Slave            |
-| 10.0.0.82 |      | Lille-Hjelper-3 | vmbrNAT (Skaftetrynet) | k3s Slave            |
-|           |      |                 |                        |                      |
-|           |      |                 |                        |                      |
-|           |      |                 |                        |                      |
+| IPV4       | IPV6 | Name            | Interface              | Comment              |
+| ---------- | ---- | --------------- | ---------------------- | -------------------- |
+| 10.0.0.1   |      | fw-1 (netti)    | bge0                   | LAN interface fw-1   |
+| 10.0.0.2   |      | fw-2            | bge0                   | Lan interface fw-2   |
+| 10.0.0.11  |      | Gateway NAT     |                        | Opnsense LAN gateway |
+| 10.0.0.20  |      | Letti           | enp130s0f0             | Letti Proxmox Host   |
+| 10.0.0.21  |      | Netti           | enp132s0f0             | Netti Proxmox Host   |
+| 10.0.0.25  |      | Pluto           | enp7s0f1               | Netti Proxmox Host   |
+| 10.0.0.26  |      | Fergus          | enp7s0f1               | Netti Proxmox Host   |
+| 10.0.0.27  |      | Skaftetrynet    | eno1                   | Netti Proxmox Host   |
+| 10.0.0.70  |      | Raptus          | vmbrNAT (pluto)        | k3s Master           |
+| 10.0.0.71  |      | Petter          | vmbrNAT (Fergus)       | k3s Master           |
+| 10.0.0.72  |      | Hutre           | vmbrNAT (Skaftetrynet) | k3s Master           |
+| 10.0.0.80  |      | Lille-Hjelper-1 | vmbrNAT (Pluto)        | k3s Slave            |
+| 10.0.0.81  |      | Lille-Hjelper-2 | vmbrNAT (Fergus)       | k3s Slave            |
+| 10.0.0.82  |      | Lille-Hjelper-3 | vmbrNAT (Skaftetrynet) | k3s Slave            |
+| 10.0.0.100 |      | lb-1            |                        |                      |
+| 10.0.0.101 |      | lb-2            |                        |                      |
+|            |      |                 |                        |                      |
