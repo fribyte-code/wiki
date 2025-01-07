@@ -12,10 +12,10 @@ draft = false
 If this VM is meant to have High availability, please read the setup for that
 before starting. The setup can be found [here](../ha-setup)
 
-1. Koble til wireguard
-1. Gå til proxmox [https://10.100.10.1:8006](https://10.100.10.1:8006)
+1. Koble til tailscale
+1. Gå til proxmox
+   [https://pluto.vpn.fribyte.no:8006](https://pluto.vpn.fribyte.no:8006)
    alternativt:
-   [https://proxmox.fribyte.no:8006](https://proxmox.fribyte.no:8006)
 1. Clone templaten `6000 (Clone me ubuntu)` på Skaftetrynet eller
    `1000 (VM 1000)` på Fergus (høyreklikk -> clone)
 1. Definer navn, gjerne navn på kunde
@@ -42,13 +42,17 @@ before starting. The setup can be found [here](../ha-setup)
 1. Start vm og vent på at den er klar. Se progress ved å trykke på `Console` og
    se at den booter.
 
-- Det er ofte problemer på dette steget, fordi template man kopierer fra ikke
-  virker som den skal. Spør gjerne om hjelp her.
+   - Det er ofte problemer på dette steget, fordi template man kopierer fra ikke
+     virker som den skal. Spør gjerne om hjelp her.
 
-1. Legg gjerne inn en DNS peker på DNS slik at man kan bruke
-   `ssh fribyte@maskinnavn.fribyte.no`.
-1. Du skal nå kunne `ssh` inn til den via skaftetrynet med `ssh {ip-addresse}`
-   eller `ssh {definert-navn}`
+1. Registrer serveren i tailscale nettverket vårt. Dette kan du se her:
+   [/docs/instrukser/tailscale](/docs/instrukser/tailscale)
+
+## Registrer VMen i HA
+
+Dersom denne VMen er kritisk for kunde, bør den registreres i High Availibility
+i clusteret vårt. Dette kan du se
+[/docs/instrukser/ha-setup](/docs/instrukser/ha-setup)
 
 ## Tildel mer lagringsplass
 
