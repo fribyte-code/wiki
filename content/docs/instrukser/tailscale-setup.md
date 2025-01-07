@@ -41,3 +41,15 @@ draft = false
    ```
    ssh fribyte@<NAME>
    ```
+
+## Empty output
+
+If for some reason you get an empty output when running `tailscale up` you can
+get it from the journal log of the headscale VM. This can be seen with the
+command
+
+```
+sudo journalctl -xeu headscale.service
+```
+
+It should be within one of the last log entries
