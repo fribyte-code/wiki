@@ -7,15 +7,15 @@ weight = 1
 draft = false
 +++
 
-# Old network (No Nat)
+# friByte subnet (No Nat)
 
 ## IPv4
 
-- ip: 158.37.6.0/26
-- broadcast: 158.37.6.63
+- Network: 158.37.6.0/26
+- Broadcast: 158.37.6.63
 - Mask: 255.255.255.192
 - Gateway: 158.37.6.33
-- DNS server: 158.37.6.52, 158.37.6.53, 1.1.1.1, 1.0.0.1
+- DNS servers: 158.37.6.21, 158.37.6.22, 1.1.1.1, 1.0.0.1
 
 ## IPv6
 
@@ -28,7 +28,7 @@ draft = false
 | ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- |
 | 158.37.6.1  |                          | guffen                         |              | guffen self hosted actions runner       |
 | 158.37.6.2  |                          |                                |              | (ledig)                                 |
-| 158.37.6.3  |                          | workshop-website (temporarily) |              | Midlertidig brukt til website workshop  |
+| 158.37.6.3  |                          |                                |              | (ledig)                                 |
 | 158.37.6.4  |                          | wiki.fribyte.no                |              | Zola wiki (konrad)                      |
 | 158.37.6.5  |                          | rf.uib.no                      |              | (kunde)                                 |
 | 158.37.6.6  |                          |                                |              | (ledig)                                 |
@@ -45,7 +45,7 @@ draft = false
 | 158.37.6.17 |                          | mso.fribyte.no                 |              | (kunde)                                 |
 | 158.37.6.18 |                          | haproxy1.ss.uib.no             |              | (dunstus) Gammel, bruk 48 og 49 cl      |
 | 158.37.6.19 |                          | pengebingen                    |              | Docker-øko (intern) (konrad)            |
-| 158.37.6.20 |                          | pluto.ss.uib.no                |              | Gammel webside server                   |
+| 158.37.6.20 |                          |                                |              | (ledig)                                  |
 | 158.37.6.21 | 2001:700:201:1::d1       | ns1.fribyte.no                 |              | Navnetjener                             |
 | 158.37.6.22 | 2001:700:201:1::d2       | ns2.fribyte.no                 |              | Navnetjener                             |
 | 158.37.6.23 |                          | srib-radio                     |              | Docker-øko (kunde) (konrad)             |
@@ -64,7 +64,7 @@ draft = false
 | 158.37.6.35 |                          | andeby.ss.uib.no               | br0:0 (eth0) | Peker mot bestemor                      |
 | 158.37.6.36 | 2001:700:201:1::3002     | studvest                       | eth0         | Docker-øko, (kunde) (konrad)            |
 | 158.37.6.37 |                          | db.fribyte.no                  |              | Database server for SRIB radio, bstv.no |
-| 158.37.6.39 |                          |                                |              | (ledig) (unknown service running on)    |
+| 158.37.6.39 |                          |                                |              | (ledig)                                 |
 | 158.37.6.40 | 2001:700:201:1::7001     | bingen.ss.uib.no               | eth0         | Backup maskin                           |
 | 158.37.6.41 |                          | galene.fribyte.no              |              | Galene streaming tjeneste               |
 | 158.37.6.42 |                          |                                |              | (ledig)                                 |
@@ -76,24 +76,32 @@ draft = false
 | 158.37.6.48 | 2001:700:201:1:5001::201 | load-balancer-1                | eth0         | Load balancer for kubernetes cluster    |
 | 158.37.6.49 | 2001:700:201:1:5001::202 | load-balancer-2                | eth0         | Load balancer for kubernetes cluster    |
 | 158.37.6.50 | 2001:700:201:1::7013     | kornelius.ss.uib.no            | eth0         | gammel overvåkning - Munin              |
-| 158.37.6.51 | 2001:700:201:1::7000     | anton.ss.uib.no                | eth0         | gammel LDAP                             |
+| 158.37.6.51 |                          |                                |              | (ledig)                                 |
 | 158.37.6.52 | 2001:700:201:1::7010     | kladden.ss.uib.no              | eth0         | DNS tjener (solveig) (master)           |
 | 158.37.6.53 | 2001:700:201:1::7018     | svartepetter.ss.uib.no         | eth0         | DNS tjener (dunstus) (slave)            |
-| 158.37.6.54 |                          | NEW FIREWALL CARP              |              | RESERVED                                |
-| 158.37.6.55 |                          | WAN Firewall 1                 |              | RESERVED                                |
-| 158.37.6.56 |                          | HEADSCALE                      |              |                                         |
+| 158.37.6.54 |                          | NEW FIREWALL CARP              |              | OPNsense firewall CARP WAN-Gateway      |
+| 158.37.6.55 |                          |                                |              | WAN Firewall 1                          |
+| 158.37.6.56 |                          | headscale.fribyte.no           |              | Headscale control server                |
 | 158.37.6.57 |                          |                                |              |                                         |
 | 158.37.6.58 |                          |                                |              |                                         |
-| 158.37.6.59 |                          | WAN Firewall 2                 |              | RESERVED                                |
-| 158.37.6.63 |                          | Broadcast                      | RESERVED     |                                         |
-| 158.37.6.64 |                          |                                |              | (ledig)                                 |
+| 158.37.6.59 |                          |                                |              | WAN Firewall 2                          |
+| 158.37.6.63 |                          | Broadcast adresse              |              | (ikke reserverbar)                      |
+| 158.37.6.64 |                          |                                |              | Ekstern ip                              |
 | 158.37.6.65 |                          | dole                           |              | Ekstern ip                              |
 | 158.37.6.66 |                          | dole                           |              | Ekstern ip                              |
 | 158.37.6.67 |                          | doffen                         |              | Ekstern ip                              |
 
-# New network (OpnSense NAT)
+# OPNsense NAT network
 
 This uses the subnet `10.0.0.0/24` for local adresses
+
+## IPv4
+
+- Network: 10.0.0.0/24
+- Broadcast: 10.0.0.255
+- Mask: 255.255.255.0
+- Gateway: 10.0.0.11
+- DNS servers: 158.37.6.21, 158.37.6.22, 1.1.1.1, 1.0.0.1
 
 | IPV4      | IPV6 | Name            | Interface              | Comment              |
 | --------- | ---- | --------------- | ---------------------- | -------------------- |
