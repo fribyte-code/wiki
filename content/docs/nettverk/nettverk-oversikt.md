@@ -24,7 +24,7 @@ draft = false
 - dns server: 2001:700:201:1::53:2, 2001:700:201:1::53:1, 2606:4700:4700::1111,
   2606:4700:4700::1001
 
-| IPv4        | IPv6                     | Navn                           | Interface    | Kommentar                               |
+| IPv4 (1-63) | IPv6                     | Navn                           | Interface    | Kommentar                               |
 | ----------- | ------------------------ | ------------------------------ | ------------ | --------------------------------------- |
 | 158.37.6.1  |                          | guffen                         |              | guffen self hosted actions runner       |
 | 158.37.6.2  |                          |                                |              | (ledig)                                 |
@@ -79,12 +79,15 @@ draft = false
 | 158.37.6.51 |                          |                                |              | (ledig)                                 |
 | 158.37.6.52 | 2001:700:201:1::7010     | kladden.ss.uib.no              | eth0         | DNS tjener (solveig) (master)           |
 | 158.37.6.53 | 2001:700:201:1::7018     | svartepetter.ss.uib.no         | eth0         | DNS tjener (dunstus) (slave)            |
-| 158.37.6.54 |                          | NEW FIREWALL CARP              |              | OPNsense firewall CARP WAN-Gateway      |
-| 158.37.6.55 |                          |                                |              | WAN Firewall 1                          |
+| 158.37.6.54 |                          | Brannmur CARP                  |              | OPNsense firewall CARP WAN-Gateway      |
+| 158.37.6.55 |                          | fw-1                           |              | WAN adresse Firewall 1                  |
 | 158.37.6.56 |                          | headscale.fribyte.no           |              | Headscale control server                |
 | 158.37.6.57 |                          |                                |              |                                         |
 | 158.37.6.58 |                          |                                |              |                                         |
-| 158.37.6.59 |                          |                                |              | WAN Firewall 2                          |
+| 158.37.6.59 |                          | fw-2                           |              | WAN adresse Firewall 2                  |
+| 158.37.6.60 |                          |                                |              | (ledig)                                 |
+| 158.37.6.61 |                          |                                |              | (ledig)                                 |
+| 158.37.6.62 |                          |                                |              | (ledig)                                 |
 | 158.37.6.63 |                          | Broadcast adresse              |              | (ikke reserverbar)                      |
 | 158.37.6.64 |                          |                                |              | Ekstern ip                              |
 | 158.37.6.65 |                          | dole                           |              | Ekstern ip                              |
