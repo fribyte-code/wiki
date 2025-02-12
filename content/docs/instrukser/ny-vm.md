@@ -46,7 +46,7 @@ before starting. The setup can be found [here](../ha-setup)
      virker som den skal. Spør gjerne om hjelp her.
 
 1. Registrer serveren i tailscale nettverket vårt. Dette kan du se her:
-   [/docs/instrukser/tailscale](/docs/instrukser/tailscale)
+   [/docs/instrukser/tailscale](/docs/instrukser/tailscale-setup)
 
 ## Registrer VMen i HA
 
