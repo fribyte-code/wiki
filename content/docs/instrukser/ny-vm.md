@@ -16,8 +16,7 @@ before starting. The setup can be found [here](../ha-setup)
 1. Gå til proxmox
    [https://pluto.vpn.fribyte.no:8006](https://pluto.vpn.fribyte.no:8006)
    alternativt:
-1. Clone templaten `6000 (Clone me ubuntu)` på Skaftetrynet eller
-   `1000 (VM 1000)` på Fergus (høyreklikk -> clone)
+1. Clone templaten `X000 (clone-me-ubuntu-xx)` som ligger på proxmox noden og (høyreklikk -> clone)
 1. Definer navn, gjerne navn på kunde
 1. Velg en ledig VM-ID
 1. Sett mode til full clone
