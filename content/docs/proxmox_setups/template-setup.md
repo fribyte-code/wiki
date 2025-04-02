@@ -10,7 +10,7 @@ draft = false
 # Proxmox vm template setup
 
 Denne prosessen er basert på følgende guider med modifiserte kommandoer for vårt oppsett:
-- https://pluto.vpn.fribyte.no:8006/pve-docs/chapter-qm.html#_preparing_cloud_init_templates
+- https://pve.proxmox.com/wiki/Cloud-Init_Support#_preparing_cloud_init_templates
 - https://thepaulo.medium.com/create-an-ubuntu-24-04-template-with-cloud-init-on-proxmox-f092080cecfb
 
 # Valg av cloud image
