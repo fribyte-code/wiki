@@ -25,32 +25,33 @@ wget https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.i
 
 # Oppsett av VM
 
-Så lager man en ny VM som skal brukes som template
-
-VM id'en må være unik og må derfor endres fra 9000 i alle kommandoer
-
+VM id erstattes med en VM id som ikke allerede er tatt i proxmox. Dette er fordi den nye VM id'en må være unik.
 ```bash
-qm create 9000 --memory 2048 --net0 virtio,bridge=vmbr0 --scsihw virtio-scsi-pci
+VM_ID="9000"
 ```
-Man kan så importere imaget inn på VM'en
+Vi oppretter en ny VM
 ```bash
-qm set 9000 --scsi0 basseng:0,import-from=/root/noble-server-cloudimg-amd64.img
+qm create $VM_ID --memory 2048 --net0 virtio,bridge=vmbr0 --scsihw virtio-scsi-pci
 ```
-
+Vi importerer cloud imagen inn på VM'en
 ```bash
-qm resize 9000 scsi0 20G
+qm set $VM_ID --scsi0 basseng:0,import-from=/root/noble-server-cloudimg-amd64.img
 ```
-
+Vi endrer størrelsen på harddriven
 ```bash
-qm set 9000 --scsihw virtio-scsi-pci --scsi0 basseng:vm-9000-disk-0
+qm resize $VM_ID scsi0 20G
 ```
-
+Vi konfigurerer harddrive typen
 ```bash
-qm set 9000 --boot c --bootdisk scsi0
+qm set $VM_ID --scsihw virtio-scsi-pci --scsi0 basseng:vm-$VM_ID-disk-0
 ```
-
+Vi setter harddriven til bootdisk
 ```bash
-qm set 9000 --ide2 basseng:cloudinit
+qm set $VM_ID --boot c --bootdisk scsi0
+```
+Vi legger til cloudinit driven
+```bash
+qm set $VM_ID --ide2 basseng:cloudinit
 ```
 
 # Oppsett av VM instillinger og cloud init
