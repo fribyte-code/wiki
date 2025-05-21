@@ -32,6 +32,9 @@ Sist Oppdatert: 22.10.2024
 
 ### Kontaktinformasjon
 
+Styret sin kontaktinfo kan hentes på [rootlinjeforening.no](
+https://rootlinjeforening.no/om-oss#1ca102fc-89e9-4aa1-b535-93dbf43a0a8e)
+
 Sist Oppdatert: 22.10.2024
 
 | Stilling     | Navn              | Nummer | E-adresse          |

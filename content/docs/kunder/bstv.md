@@ -30,6 +30,8 @@ Sist Oppdatert: 06.03.2022
 
 ### Kontaktinformasjon
 
+Styret sin kontaktinfo kan hentes på [bstv.no](https://bstv.no/kontakt-oss/)
+
 Sist Oppdatert: 06.03.2022
 
 | Stilling           | Navn                 | Nummer     | E-adresse                  |
