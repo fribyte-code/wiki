@@ -37,6 +37,19 @@ Sist Oppdatert: 12.01.2023
 | ------------------ | --------------------- | ---------- | ----------------------------- |
 | Ansvarlig Redaktør | Even Hæhre Hammersvik | 474 45 155 | ansvarligredaktor@studvest.no |
 
+## Samba filserver per 2025-08-19
+
+Jailet klarte ikke helt å starte. Ikke helt peiling når dette gikk at skogen men
+men. Var bare en `exec.consolelog` path som ikke fantes lenger.
+
+### Tips and tricks
+
+- List jails med `jls`
+- Start/stop jail med `service jail start/stop studvest`
+- Jailet ligger på `/dalar/jails/filer.studvest.no`
+- Koble til jailet som root med `jexec -u root studvest`
+  - Her kan man sjekke logger for samba osv. Sharen ligger inne i jailet
+
 ## Samba filserver per 2023-10-17
 
 Studvest kjører fortsatt filene sine på en samba filserver
@@ -51,7 +64,7 @@ Studvest kjører fortsatt filene sine på en samba filserver
 - Bruk `zpool list` og `zfs list` for å se hvor mye plass som er igjen.
 - Passord til samba server ligger i bitwarden
 - Mistenker at samba serveren er satt opp mot LDAP serveren på klodrik så vær
-  litt forsiktig med Klodrik.
+  litt forsiktig med Klodrik. NB DENNE ER CONFIRMED WRONG 19.08.2025 - Rolf
 
 ### Windows Koble til samba filserver fra internt i UiB nettverk mellom studentsenteret og serverrommet
 

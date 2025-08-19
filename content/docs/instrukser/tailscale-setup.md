@@ -36,6 +36,9 @@ draft = false
    sudo ~/join.sh <NAME> <Machine Key>
    ```
 
+1. Add the vmuser/vm-name to the `dest` key inside the `ssh` acl in
+   `/etc/headscale/headscale_acl` on the headscale server
+
 1. Check that the VM is accessible over tailscale by running
 
    ```
