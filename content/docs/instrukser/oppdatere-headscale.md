@@ -1,7 +1,7 @@
 +++
 title = "Oppdatere Headscale"
 description = "Hvordan oppdatere headscale når det er en ny oppdatering"
-template = "docs/section.html"
+template = "docs/page.html"
 sort_by = "weight"
 weight = 1
 draft = false
