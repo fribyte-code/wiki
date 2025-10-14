@@ -26,7 +26,8 @@ For å lage en ny epost-adresse for det nye medlemmet.
 3. Under "All Addresses" eller "Mailboxes", trykk på "New Mailbox"
 4. Fyll inn medlemmets info
 5. Trykk "Create Mailbox"
-6. Profitt
+6. Nytt medlem kan sjekke innboksen sin på [webmail.migadu.com](https://webmail.migadu.com/) og legge til epost serveren i sin egen mail app. Instrukser ligger på [migadu.com/guides](https://www.migadu.com/guides/).
+7. Profitt
 
 ### Legge nytt medlem til i mailing listene:
 
