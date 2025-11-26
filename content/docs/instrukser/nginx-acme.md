@@ -7,7 +7,9 @@ weight = 5
 draft = false
 +++
 
-Følg installasjonstegene for nginx sitt offisielle repo på Ubuntu. Dette inkluderer ekstra moduler som ngx_http_acme_module.
+# Installasjon
+
+Følg installasjonstegene for nginx sitt offisielle repo på Ubuntu. Dette inneholder ekstra moduler som ngx_http_acme_module.
 
 https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#prebuilt_ubuntu
 
@@ -16,6 +18,8 @@ Installer ngx_http_acme_module nginx modulen
 ```bash
 sudo apt install nginx-module-acme
 ```
+
+# Konfigurering
 
 Endre konfigurasjonsfilen til nginx
 
@@ -73,7 +77,7 @@ Skru av nginx sin default landingsside
 sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disabled
 ```
 
-Vi kan nå legge til en ny konfigurasjonsfil for siden vår i conf.d mappa. Her serverer vi en statisk side, men det er også mulig å bruke nginx som en revers proxy om ønsket.
+Vi kan nå legge til en ny konfigurasjonsfil for siden du skal servere i conf.d mappa. I dette eksempelet serverer vi en statisk side, men det er også mulig å bruke nginx som en revers proxy om ønsket.
 
 ```bash
 sudo nano /etc/nginx/conf.d/example.conf
@@ -120,7 +124,7 @@ Sjekk at nginx konfigurasjonen er a-ok
 sudo nginx -t
 ```
 
-Lag en folder i hjemmemappen til brukeren som nginx kan servere filene fra, filene kan plasseres hit av CI/CD.
+Lag en folder i hjemmemappen til brukeren som nginx kan servere filene fra, filene kan så kopieres hit av en CI/CD pipeline eller liknende.
 
 ```bash
 mkdir ~/example
