@@ -7,52 +7,37 @@ weight = 5
 draft = false
 +++
 
-## How to connect a new VM to the tailscale network so we can ssh to it
+# Join a new VM to our internal tailnet
 
-1. Install tailscale following their official guide
-   - [https://tailscale.com/download](https://tailscale.com/download)
-1. Then connect to the tailscale mesh VPN by running this command
+## Getting a preauthenticated key for joining the node
 
-   ```
-   sudo tailscale up --login-server https://headscale.fribyte.no --ssh  --accept-dns=false
-   ```
+1. Make sure you are connected to the tailnet already then ssh into the headscale VM
 
-1. Then you want to copy the key from the output, it should look something like
-   follows
-
-   ```
-   mkey:27d04d3c1c5e9........
-   ```
-
-1. Then while keeping that terminal active, ssh into the headscale VM
-
-   ```
-   ssh fribyte@headscale
-   ```
-
-1. Then run this command where NAME=name of VM and the `mkey:cccfdsdsfds.....`
-
-   ```
-   sudo ~/join.sh <NAME> <Machine Key>
-   ```
-
-1. Add the vmuser/vm-name to the `dest` key inside the `ssh` acl in
-   `/etc/headscale/headscale_acl` on the headscale server
-
-1. Check that the VM is accessible over tailscale by running
-
-   ```
-   ssh fribyte@<NAME>
-   ```
-
-## Empty output
-
-If for some reason you get an empty output when running `tailscale up` you can
-get it from the journal log of the headscale VM. This can be seen with the
-command
-
-```
-sudo journalctl -xeu headscale.service
+```bash
+ssh fribyte@headscale
 ```
 
-It should be within one of the last log entries
+2. Create a new preauth key that is tagged with the server tag. This will create a temporary key you need to join the new node
+
+```bash
+sudo headscale preauthkeys create --tags tag:server
+```
+## Joining the node with the preauth key
+
+1. Install tailscale using the following command
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+```
+
+2. Join the node by supplying the preauthkey you generated in the last step by replacing `<preauthkey>` in the command
+
+```bash
+sudo tailscale up --ssh --accept-dns=false --login-server https://headscale.fribyte.no --auth-key <preauthkey>
+```
+
+3. Check that the VM is now accessible over tailscale by running
+
+```
+ssh fribyte@<VM-HOSTNAME>
+```
