@@ -1,0 +1,51 @@
+{% extends "page.html" %} {% block body %} {% set page_class = "docs single" %}
+{% endblock body %} {% block header %} {# This value is matched by the
+config.extra.menu.main~url #} {% set current_section = "docs" %} {{
+macros_header::header(current_section=current_section)}} {% endblock header %}
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    {% set page_lang = "no" %} {% if page.extra.lang is defined and
+    page.extra.lang %} {% set page_lang = page.extra.lang %} {% endif %}
+    <div class="row flex-xl-nowrap">
+      {{ macros_sidebar::docs_sidebar(current_section=current_section) }} {{
+      macros_toc::docs_toc(page=page) }}
+      <main class="docs-content col-lg-11 col-xl-9">
+        {% if page.extra.translation is defined and page.extra.translation %} {%
+        set translated_page = get_page(path=page.extra.translation) %}
+        <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Language switch">
+          {% if page_lang == "en" %}
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="{{ translated_page.permalink | safe }}"
+            >NO</a
+          >
+          <span class="btn btn-primary btn-sm disabled" aria-current="page"
+            >EN</span
+          >
+          {% else %}
+          <span class="btn btn-primary btn-sm disabled" aria-current="page"
+            >NO</span
+          >
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="{{ translated_page.permalink | safe }}"
+            >EN</a
+          >
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <h1>{{ page.title }}</h1>
+        {% if page.extra.lead %}
+        <p class="lead">{{ page.extra.lead | safe }}</p>
+        {% endif %} {{ page.content | safe }} {% if config.extra.edit_page %} {{
+        macros_edit_page::docs_edit_page(current_path=current_path) }} {% endif
+        %} {% if page_lang != "en" %} {{
+        macros_navigation::docs_navigation(page=page,
+        current_section=current_section) }} {% endif %}
+      </main>
+    </div>
+  </div>
+</div>
+{% endblock content %}
