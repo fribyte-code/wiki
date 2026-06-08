@@ -5,6 +5,10 @@ updated = 2024-01-09
 template = "docs/page.html"
 sort_by = "weight"
 weight = 10
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/fribyte.no-en.md"
 +++
 
 For å oppdatere eller gjøre endringer på [fribyte.no](https://fribyte.no), se

@@ -4,6 +4,10 @@ description = "En forklaring av hvordan jeg migrerte alle databasene fra Donald 
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/migrere-database-en.md"
 +++
 
 friByte drifter SQL-databaser for klienter. Dette har vi forsåvidt alltid gjort,

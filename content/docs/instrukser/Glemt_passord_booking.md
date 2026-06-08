@@ -4,6 +4,10 @@ description = ""
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/Glemt_passord_booking-en.md"
 +++
 
 Det har seg slik at noen kunder glemmer passordet på bookingsystemt sitt

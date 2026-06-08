@@ -4,6 +4,10 @@ description = "Guffen self-hosted github actions runner"
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
+
+[extra]
+lang = "no"
+translation = "docs/tjenester/guffen-en.md"
 +++
 
 Guffen er en VM på gjertrud satt opp til å kjøre github actions tasks.

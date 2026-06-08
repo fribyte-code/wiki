@@ -6,6 +6,10 @@ sort_by = "weight"
 weight = 1
 draft = false
 toc = true
+
+[extra]
+lang = "no"
+translation = "docs/nettverk/hardware-nettverk-en.md"
 +++
 
 # Informasjon er importert fra gammel wiki. Kan og er nok utdatert!

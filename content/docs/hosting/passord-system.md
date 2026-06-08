@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 2
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/hosting/passord-system-en.md"
 +++
 
 ## Bitwarden passord verting

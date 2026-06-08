@@ -1,10 +1,14 @@
 +++
-title = "Castopod"
+title = "Castopod **OUTDATED**"
 description = "Åpen kildekode podcast-tjener"
 template = "docs/page.html"
 sort_by = "weight"
 weight = 2
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/hosting/castopod-en.md"
 +++
 
 friByte drifter sin egen podcast-tjener for å distribuere sin egen podcast,

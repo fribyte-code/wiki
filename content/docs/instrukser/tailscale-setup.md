@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/tailscale-setup-en.md"
 +++
 
 # Join a new VM to our internal tailnet

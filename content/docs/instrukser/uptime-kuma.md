@@ -4,6 +4,10 @@ description = "Hvordan legge til en ny tjeneste i uptime kuma"
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/uptime-kuma-en.md"
 +++
 
 #friByte bruker [Uptime Kuma](https://github.com/louislam/uptime-kuma) for holde

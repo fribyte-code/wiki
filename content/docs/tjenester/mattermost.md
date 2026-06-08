@@ -4,6 +4,10 @@ description = "Intern kommunikasjon"
 template = "docs/page.html"
 sort_by = "weight"
 weight = 3
+
+[extra]
+lang = "no"
+translation = "docs/tjenester/mattermost-en.md"
 +++
 
 For all intern kommunikasjon bruker vi Mattermost.

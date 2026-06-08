@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/aksess-til-filsystem-inni-vm-disk-image-en.md"
 +++
 
 Hensikten med denne veiledningen er å gjøre det mulig for friBytere å lese data
