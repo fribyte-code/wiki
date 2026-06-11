@@ -146,8 +146,7 @@ Commands are fetched from:
 
 ## Ting å være obs på
 
-- Mattermost er installert på `konrad` (17.06.2023)
-- VM-en kjører på `gjertrud` (17.06.2023)
+- Mattermost VM-en kjører på `pluto` (11.06.2026)
 - Mattermost er installert med
   **[Mattermost Omnibus CLI](https://docs.mattermost.com/install/installing-mattermost-omnibus.html)**
   - Da er ikke alle config-feltene i `/opt/mattermost/config.json` redigerbare

@@ -146,8 +146,7 @@ Commands are fetched from:
 
 ## Things to be aware of
 
-- Mattermost is installed on `konrad` (2023-06-17)
-- The VM runs on `gjertrud` (2023-06-17)
+- The Mattermost VM runs on `pluto` (2026-06-11)
 - Mattermost is installed with
   **[Mattermost Omnibus CLI](https://docs.mattermost.com/install/installing-mattermost-omnibus.html)**
   - Not all config fields in `/opt/mattermost/config.json` are editable that
