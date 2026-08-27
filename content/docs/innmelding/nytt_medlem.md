@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/innmelding/nytt_medlem-en.md"
 +++
 
 Dette er en instruks for hvordan gi nye medlemmer tilgang til de relevante

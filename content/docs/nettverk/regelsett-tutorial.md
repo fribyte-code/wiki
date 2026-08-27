@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 1
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/nettverk/regelsett-tutorial-en.md"
 +++
 
 En liten fremgangsmåte for skriving av pf regelsett, andre howtos og kjennskap

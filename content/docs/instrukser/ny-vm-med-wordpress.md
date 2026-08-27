@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/instrukser/ny-vm-med-wordpress-en.md"
 +++
 
 If this VM is meant to have High Availability, please see [here](../ha-setup)

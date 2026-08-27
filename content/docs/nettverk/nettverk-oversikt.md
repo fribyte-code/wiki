@@ -5,6 +5,7 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 1
 draft = false
+
 +++
 
 # friByte subnet (No Nat)
@@ -38,10 +39,10 @@ draft = false
 | 158.37.6.11 |                          | klient.kvarteret.no            | carp1        | Felles addresse                         |
 | 158.37.6.12 |                          | skaftetrynet.fribyte.no        |              | Proxmox node                            |
 | 158.37.6.13 |                          | rootlinjeforening.no           |              | (kunde)                                 |
-| 158.37.6.14 |                          | SUB-BSI.no                     |              | (kunde)                                 |
-| 158.37.6.15 |                          | geo.uib.no, geo.fribyte.no     |              | (kunde)                                 |
-| 158.37.6.16 |                          | srib-minecraft                 |              | (kunde)                                 |
-| 158.37.6.17 |                          | mso.fribyte.no                 |              | (kunde)                                 |
+| 158.37.6.14 |                          |                                |              | (ledig)                                 |
+| 158.37.6.15 |                          | geo.uib.no?, geo.fribyte.no?   |              | (kunde?)                                |
+| 158.37.6.16 |                          | srib-minecraft?                |              | (kunde)                                 |
+| 158.37.6.17 |                          | mso.fribyte.no                 |              | (Ikke kunde lenger)                     |
 | 158.37.6.18 |                          | haproxy1.ss.uib.no             |              | (dunstus) Gammel, bruk 48 og 49 cl      |
 | 158.37.6.19 |                          | pengebingen                    |              | Docker-øko (intern)                     |
 | 158.37.6.20 |                          |                                |              | (ledig)                                 |
@@ -49,7 +50,7 @@ draft = false
 | 158.37.6.22 | 2001:700:201:1::d2       | ns2.fribyte.no                 |              | Navnetjener                             |
 | 158.37.6.23 |                          | srib-radio                     |              | Docker-øko (kunde) (konrad)             |
 | 158.37.6.24 | 2001:700:201:1::fd       |                                |              | Rekursiv navnetjener                    |
-| 158.37.6.25 |                          | btsi.no                        |              | (kunde)                                 |
+| 158.37.6.25 |                          |                                |              | (ledig)                                 |
 | 158.37.6.26 |                          | skrue NFS + http server        |              | Skrue                                   |
 | 158.37.6.27 |                          | fergus.fribyte.no              | eno4         | Proxmox node                            |
 | 158.37.6.28 |                          | Flytende IP for lb-1 og lb-2   |              | delt mellom lb-1 og lb-2 VMer           |
@@ -63,7 +64,7 @@ draft = false
 | 158.37.6.35 |                          | andeby.ss.uib.no               | br0:0 (eth0) | Peker mot bestemor                      |
 | 158.37.6.36 | 2001:700:201:1::3002     | studvest                       | eth0         | Docker-øko, (kunde)                     |
 | 158.37.6.37 |                          | db.fribyte.no                  |              | Database server for SRIB radio, bstv.no |
-| 158.37.6.39 |                          | mso-staging-db                 |              | Database-server for utvikling av ny MSO |
+| 158.37.6.39 |                          |                                |              | (ledig)                                 |
 | 158.37.6.40 | 2001:700:201:1::7001     | bingen.ss.uib.no               | eth0         | Backup maskin                           |
 | 158.37.6.41 |                          | galene.fribyte.no              |              | Galene streaming tjeneste               |
 | 158.37.6.42 |                          | lytt.srib.no                   |              | SRIB Azuracast                          |

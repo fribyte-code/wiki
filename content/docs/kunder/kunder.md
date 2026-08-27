@@ -54,11 +54,6 @@ Per 2024-02-22 drifter vi følgende:
 - Nettside drifting (wordpress)
   - rf.uib.no
 
-## MSO
-
-- Nettside drifting/verting (wip)
-  - mso.uib.no
-
 ## Mjøllnir.no
 
 Linjeforeningen for geologistudentene ved UiB

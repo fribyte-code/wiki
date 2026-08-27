@@ -5,6 +5,13 @@
 Dette er friByte sin interne wiki-side. Den bruker rammeverket Zola til å
 generere en statisk side.
 
+## Writing Guidelines
+
+- English is preferred, but not required. 
+- If one language is updated, the other must be aswell. if you can't be bothered delete the norwegian version.
+- Include the date written and time of the last update.
+- Be mindful of the people in the future reading the wiki.
+
 ## Sett opp lokalt
 
 ```ssh

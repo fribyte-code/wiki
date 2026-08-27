@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 1
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/nettverk/regelsett-en.md"
 +++
 
 ### Gjennomgang av regelsett

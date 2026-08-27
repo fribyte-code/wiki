@@ -5,6 +5,10 @@ template = "docs/page.html"
 sort_by = "weight"
 weight = 5
 draft = false
+
+[extra]
+lang = "no"
+translation = "docs/produksjon/bilder-srib-en.md"
 +++
 
 ### Kort forklaring
